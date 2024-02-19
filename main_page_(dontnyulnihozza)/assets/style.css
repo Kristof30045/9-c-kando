@@ -62,7 +62,7 @@ body{
 
 
 /*      Minden kártya alap beállítása      */
-.card-html, .card-css, .card-js, .card-python, .card-lua, .card-java, .card-CSHARP, .card-php {
+.card-html, .card-css, .card-js, .card-python, .card-lua, .card-java, .card-CSHARP, .card-php, .card-vue {
     width: 200px;
     padding: 50px;
     height: 300px;
@@ -293,6 +293,46 @@ body{
 
 .php-h1{
         background: linear-gradient(to left, black 47% , #484C89 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+}
+
+/*      VUE-CARD        */
+
+.vueimg{
+    width: 280px;
+    height: 230px;
+    right: 40px;
+    bottom: 10px;
+    position: relative;
+    transition: 2s;
+}
+
+.card-vue{
+    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
+                linear-gradient(to bottom, transparent , transparent ) border-box;
+}
+
+.card-vue:hover{
+    max-width: 250px;
+    position: relative;
+    cursor: pointer;
+    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
+                linear-gradient(to bottom, #35495e , #42b883 ) border-box;
+    border: 5px solid transparent;
+    border-radius: 20px;
+}
+
+
+.vueimg:hover{
+    filter: drop-shadow(1px 1px 15px #484C89);
+    transform: scale(1.15);
+
+}
+
+.vue-h1{
+        background: linear-gradient(to left, #35495e 45%, #42b883  50%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     
