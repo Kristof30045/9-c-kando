@@ -80,6 +80,8 @@ body{
 
 .htmlimg{
     transition: 2s;
+    position: relative;
+    right: 5px;
 }
 
 .card-html:hover{
