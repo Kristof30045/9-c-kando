@@ -75,273 +75,7 @@ body{
 /*      MINDEN KÁRTYA     */
 
 
-
-/*      HTML-CARD (Krisztian)       */
-
-.htmlimg{
-    transition: 2s;
-    position: relative;
-    right: 5px;
-}
-
-.card-html:hover{
-    border: 5px solid #f06529;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.htmlimg:hover{
-    filter: drop-shadow(1px 1px 20px #f06529);
-    transform: scale(1.15);
-}
-
-
-/*      CSS-CARD (Krisztian)         */
-
-.cssimg{
-    width: 240px;
-    height: 239px;
-    position: relative;
-    right: 20px;
-    transition: 2s;
-}
-
-.card-css:hover{
-    border: 5px solid #2965f1;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.cssimg:hover{
-    filter: drop-shadow(1px 1px 20px #2965f1);
-    transform: scale(1.15);
-}
-
-
-/*      JS-CARD(     */
-
-.jsimg{
-    width: 240px;
-    height: 239px;
-    position: relative;
-    right: 20px;
-    transition: 2s;
-}
-
-.card-js:hover{
-    border: 5px solid #f0db4f;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.jsimg:hover{
-    filter: drop-shadow(1px 1px 20px #f0db4f);
-    transform: scale(1.15);
-}
-
-
-/*      PYTHON-CARD     */
-
-.pythonimg{
-    position: relative;
-    right: 28.5px;
-    transition: 2s;
-}
-
-.card-python{
-    border: 5px solid transparent;
-}
-
-.card-python:hover{
-    max-width: 250px;
-    position: relative;
-    cursor: pointer;
-    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
-                linear-gradient(120deg, #2965f1, #f0db4f) border-box;
-    border: 5px solid transparent;
-    border-radius: 20px;
-}
-
-.pythonimg:hover{
-    filter: drop-shadow(1px 1px 15px #829ba4);
-    transform: scale(1.1);
-}
-
-.python-h1{
-    background: linear-gradient(to left, blue, yellow);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-
-
-/*      LUA-CARD      */
-
-.luaimg{
-    width: 400px;
-    height: 250px;
-    position: relative;
-    right: 103px;
-    transition: 2s;
-}
-
-.card-lua:hover{
-    border: 5px solid #00007D;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-
-.luaimg:hover{
-    filter: drop-shadow(1px 1px 15px #00007D);
-    transform: scale(1.15);
-}
-
-
-/*      JAVA-CARD      */
-
-.javaimg{
-    width: 300px;
-    height: 249px;
-    right: 55px;
-    bottom: 20px;
-    position: relative;
-    transition: 2s;
-}
-
-.card-java{
-    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
-                linear-gradient(to bottom, transparent , transparent ) border-box;
-}
-
-.card-java:hover{
-    max-width: 250px;
-    position: relative;
-    cursor: pointer;
-    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
-                linear-gradient(to bottom, #f89820 , #5382a1 ) border-box;
-    border: 5px solid transparent;
-    border-radius: 20px;
-}
-
-
-.javaimg:hover{
-    filter: drop-shadow(1px 1px 15px #00007D);
-    transform: scale(1.15);
-
-}
-
-.java-h1{
-        background: linear-gradient(to left, #f89820 45%, #5382a1 50%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    
-    }
-
-/*      C#-CARD      */
-
-.CSHARPimg{
-    width: 250px;
-    height: 249px;
-    right: 25px;
-    position: relative;
-    transition: 2s;
-}
-
-.card-CSHARP:hover{
-    border: 5px solid #280068;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.CSHARPimg:hover{
-    filter: drop-shadow(1px 1px 15px #280068);
-    transform: scale(1.1);
-}
-
-
-/*      PHP-CARD        */
-
-.phpimg{
-    width: 300px;
-    height: 249px;
-    right: 50px;
-    bottom: 20px;
-    position: relative;
-    transition: 2s;
-}
-
-.card-php{
-    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
-                linear-gradient(to bottom, transparent , transparent ) border-box;
-}
-
-.card-php:hover{
-    max-width: 250px;
-    position: relative;
-    cursor: pointer;
-    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
-                linear-gradient(to bottom, black , #484C89 ) border-box;
-    border: 5px solid transparent;
-    border-radius: 20px;
-}
-
-
-.phpimg:hover{
-    filter: drop-shadow(1px 1px 15px #484C89);
-    transform: scale(1.15);
-
-}
-
-.php-h1{
-        background: linear-gradient(to left, black 47% , #484C89 50%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    
-}
-
-
-/*      VUE-CARD        */
-
-.vueimg{
-    width: 280px;
-    height: 230px;
-    right: 40px;
-    bottom: 10px;
-    position: relative;
-    transition: 2s;
-}
-
-.card-vue{
-    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
-                linear-gradient(to bottom, transparent , transparent ) border-box;
-}
-
-.card-vue:hover{
-    max-width: 250px;
-    position: relative;
-    cursor: pointer;
-    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
-                linear-gradient(to bottom, #35495e , #42b883 ) border-box;
-    border: 5px solid transparent;
-    border-radius: 20px;
-}
-
-
-.vueimg:hover{
-    filter: drop-shadow(1px 1px 15px #484C89);
-    transform: scale(1.15);
-
-}
-
-.vue-h1{
-        background: linear-gradient(to left, #35495e 45%, #42b883  50%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    
-    }
-
-/*      SQL-CARD        */
+/*      SQL-CARD (Viktorsz király)       */
 
 .sqlimg{
     width: 230px;
@@ -379,6 +113,65 @@ body{
         -webkit-text-fill-color: transparent;
     
     }
+
+/*        PHP-CARD (Bődy Dániel)        */
+
+
+
+/*        GO-CARD (Farkas Balázs)        */
+
+
+
+/*        SWIFT-CARD (Farkas Kristóf)        */
+
+
+
+/*        JAVA-CARD (Gorácz Márton)        */
+
+
+
+/*        C++-CARD (Hidasi Armand)        */
+
+
+
+/*        JAVASCRIPT-CARD (Jankovics Botond)        */
+
+
+
+/*        VUE.JS-CARD (Kanyog Kristóf)        */
+
+
+
+/*        C#-CARD (Orliczki Norbert)        */
+
+
+
+/*        PYTHON-CARD (Rácz László)        */
+
+
+
+/*        HTML-CARD (Sánta Krisztián)        */
+
+
+
+/*        CSS-CARD (Sánta Krisztián)        */
+
+
+
+/*        RUBY-CARD (Spisák Zsombor)        */
+
+
+
+/*        LUA-CARD (Szabó Levente)        */
+
+
+
+/*        Visual(Basic)-CARD (Szőcs Botond)        */
+
+
+
+/*        SRATCH-CARD (Zöld zsombor)        */
+
 
 
 
