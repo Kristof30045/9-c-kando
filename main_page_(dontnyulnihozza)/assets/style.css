@@ -140,12 +140,13 @@ body{
 
 /*        VUE.JS-CARD (Kanyog Kristóf)        */
 .vueimg{
-    width: 280px;
-    height: 230px;
-    right: 40px;
-    bottom: 10px;
-    position: relative;
+    width: 200px;
+    padding: 50px;
+    height: 300px;
+    text-align: center;
     transition: 2s;
+    border-radius: 40px;
+    border: 5px solid transparent;
 }
 
 .card-vue{
