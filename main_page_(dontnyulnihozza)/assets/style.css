@@ -155,13 +155,20 @@ body{
 }
 
 .card-vue:hover{
-    max-width: 250px;
+    max-width: 200px;
     position: relative;
     cursor: pointer;
     background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
                 linear-gradient(to bottom, #35495e , #42b883 ) border-box;
     border: 5px solid transparent;
     border-radius: 20px;
+        width: 200px;
+    padding: 50px;
+    height: 300px;
+    text-align: center;
+    transition: 2s;
+    border-radius: 40px;
+    border: 5px solid transparent;
 }
 
 
