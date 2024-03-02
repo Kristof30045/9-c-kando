@@ -139,7 +139,7 @@ body{
 
 
 /*        VUE.JS-CARD (Kanyog Kristóf)        */
-    .vueimg{
+.vueimg{
     width: 280px;
     height: 230px;
     right: 40px;
@@ -148,12 +148,12 @@ body{
     transition: 2s;
 }
 
-.vue-card{
+.card-vue{
     background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
                 linear-gradient(to bottom, transparent , transparent ) border-box;
 }
 
-.vue-card:hover{
+.card-vue:hover{
     max-width: 250px;
     position: relative;
     cursor: pointer;
