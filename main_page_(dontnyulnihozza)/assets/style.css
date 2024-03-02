@@ -148,12 +148,12 @@ body{
     transition: 2s;
 }
 
-.vue-card{
+.card-vue{
     background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
                 linear-gradient(to bottom, transparent , transparent ) border-box;
 }
 
-.vue-card:hover{
+.card-vue:hover{
     max-width: 250px;
     position: relative;
     cursor: pointer;
@@ -170,7 +170,7 @@ body{
 
 }
 
-.h1-vue{
+.vue-h1{
         background: linear-gradient(to left, #35495e 45%, #42b883  50%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
