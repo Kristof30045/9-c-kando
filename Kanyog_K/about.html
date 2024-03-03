@@ -9,8 +9,8 @@
     <title>Vue.js Wiki About</title>
     <style>
         body {
-            background-color: #40a37d;
-            color: #ffffff;
+            background-color: #1a1a1a;
+            color: #909293;
             text-align: justify;
         }
 
@@ -24,7 +24,6 @@
         }
 
         .hr-custom{
-            width: 70%;
             margin: 0 auto;
             color : white;
         }
@@ -34,10 +33,16 @@
         }
 
         h2{text-align: center;}
+
+        .gradient-text {
+            background-image: linear-gradient(to right, rgba(66,211,146,255), rgba(95,139,238,255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://kristof30045.github.io/9-c-kando/main_page_(dontnyulnihozza)/index.html">Main Page</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,15 +63,15 @@
         </div>
       </nav>
       
-      <div class="container-fluid text-center">
-        <h1>Frequently Asked Questions</h1>
+      <div class="container text-center d-flex justify-content-center d-md-block">
+        <h1 class="gradient-text">Frequently Asked Questions</h1>
       </div>
 
-      <div class="container-fluid mt-auto py-3">
+      <div class="container mt-auto py-3">
         <hr class="hr-custom">
       </div>
       
-      <div class="container-fluid">
+      <div class="container">
         <h2>Who maintains Vue?</h2>
         <p>Vue is an independent, community-driven project. It was created by Evan You in 2014 as a personal side project. Today, Vue is actively maintained by a team of both full-time and volunteer members from all around the world, where Evan serves as the project lead. You can learn more about the story of Vue in this documentary.</p>
         <p>Vue's development is primarily funded through sponsorships and we have been financially sustainable since 2016. If you or your business benefit from Vue, consider sponsoring us to support Vue's development!</p>
@@ -145,8 +150,8 @@
 
 
 </body>
-<footer class="mt-auto py-3 container-fluid">
-    <div class="container-fluid text-center">
+<footer class="mt-auto py-3 container">
+    <div class="container text-center">
         <p>&copy; 2023 Vue.js Wiki By.:Kristóf. All rights reserved.</p>
     </div>
 </footer>
