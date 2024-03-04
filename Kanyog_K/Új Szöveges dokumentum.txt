@@ -1,0 +1,35 @@
+A Vue.js egy könnyen hozzáférhető, teljesítményes és sokoldalú keretrendszer webes felhasználói felületek építéséhez. A Vue a szabványos HTML, CSS és JavaScript alapján épül, és intuitív API-val rendelkezik, amelyet világszínvonalú dokumentáció kísér.
+
+A Vue.js egy könnyen hozzáférhető, teljesítményes és sokoldalú keretrendszer webes felhasználói felületek építéséhez. Jelenleg több mint 650 000 webhelyen használják, és olyan nagyvállalatok is alkalmazzák, mint az Apple, a Netflix és a Google.
+
+A Vue.js számos előnnyel rendelkezik más keretrendszerekkel szemben. Itt van néhány főbb különbség:
+- Könnyű tanulás és használat: A Vue.js könnyen elsajátítható, mivel a szabványos HTML, CSS és JavaScript alapján épül. Az intuitív API és a világszínvonalú dokumentáció segít a gyors fejlődésben .
+- Reaktív és komponálható komponensek: A Vue komponensek reaktívak és könnyen összeállíthatók. A komponensek közötti kommunikáció egyszerű, és a komponensek újrahasznosíthatók .
+- Teljesítmény és optimalizáció: A Vue.js gyors és optimalizált. A virtuális DOM és a kompilátor segít minimalizálni a felesleges újra-rendereléseket. A Vue alapértelmezés szerint a stílusokat is a komponensekhez tartozó stílus címkékben definiálja, ami könnyen érthető és karbantartható .
+- Közösség és ökoszisztéma: Bár a Vue kisebb közösséggel rendelkezik, mégis aktív és növekszik. A Vue.js ökoszisztémája is bővül, és egyre több kiegészítő és harmadik féltől származó könyvtár érhető el .
+- Rugalmas és könnyen testreszabható: A Vue.js lehetővé teszi a fejlesztők számára, hogy a saját igényeik szerint testre szabhassák a keretrendszert. Nincs szükség a teljes keretrendszer használatára, így a Vue könnyen integrálható meglévő projektekbe .
+Összességében a Vue.js egy könnyen tanulható, teljesítményes és rugalmas keretrendszer, amelyet sok fejlesztő előnyben részesít más alternatívákkal szemben.
+
+A Vue.js egy könnyen hozzáférhető, teljesítményes és sokoldalú keretrendszer webes felhasználói felületek építéséhez. Ha most ismerkedsz vele, itt van néhány tipp a tanuláshoz és használathoz:
+- Microsoft Learn: A Microsoft Learn oldalán találsz egy képzési tervet, amely bemutatja a Vue használatának első lépéseit. A Vue.js egy progresszív webes keretrendszer, amely lehetővé teszi a fejlesztők számára, hogy gyorsan felálljanak és futjanak, csak egy szkriptcímke hozzáadásával. A képzés során megismerheted a Vue alapjait és megtanulhatod, hogyan hozz létre nagy méretű, méretezhető alkalmazásokat .
+- FreeCodeCamp Vue Tutorial: A FreeCodeCamp ingyenes videós tanfolyama segít a Vue.js alapjainak megértésében. A 3,5 órás tanfolyam során lépésről lépésre megismerheted a Vue komponenseket, a reaktivitást és a Vue projekt felállítását .
+- GitHub Repositories: Ha már kicsit jártasabb vagy, érdemes megnézni más fejlesztők GitHub repóit. Például a vue-mpa-application-example egy egyszerű Vue MPA (multi-page application) példa, amely több oldalas weboldalakhoz használható. Itt láthatod, hogyan épülnek fel a komponensek és a globális stílusok .
+- Bootstrap és SCSS: Ha Bootstrap-et és globális SCSS stílusokat is használni szeretnél, a Vue projektben a main.js fájlban importálhatod a Bootstrap stíluslapját, és a globális SCSS fájlokat a style címkékben definiálhatod. Például:
+
+// main.js
+import 'bootstrap/dist/css/bootstrap.css';
+
+A globális SCSS fájlokat pedig a komponensekben használhatod:
+
+<style lang="scss">
+@import 'globals.scss';
+
+// Itt definiálhatod a globális stílusokat
+</style>
+
+Ne felejtsd el telepíteni a Bootstrap-et a projektbe:
+
+$ npm install bootstrap
+
+- Gyakorlás és Projektek: A legjobb módja a tanulásnak a gyakorlás és a projektek elkészítése. Próbálj ki kisebb alkalmazásokat, építsd fel a saját portfóliódat, és használd a Vue-t valós projektekben.
+További részletekért látogasd meg a Vite dokumentációját és a TypeScript használati útmutatót  . Sok sikert a Vue tanulásához!
