@@ -1,0 +1,130 @@
+body{
+    background-color: rgb(23, 22, 22);
+    height: 2000px;
+    color: gray;
+    font-family: "Madimi One", sans-serif;;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+.sticky{
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    overflow: hidden;
+    top: -10px;
+    position: relative;
+    width: 100%;
+    left: -10px;
+    background: transparent;
+    padding: 20px 10px;
+  }
+  
+header nav {
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    margin: 15px;
+    vertical-align: top;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+}
+
+nav{
+    display: fixed;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: rgb(4, 255, 0);
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    transition: all .1s ease-in-out;
+}
+
+a:hover{
+    border-bottom: 2px solid limegreen;
+}
+
+a:active{
+    border-bottom: 2px solid green;
+}
+  
+.pipe{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.container{
+    background-color: rgba(185, 194, 186, 0.335);
+    border-radius: 50px;
+    color: white;
+    height: 1500px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 3px 3px limegreen, -1em 0 .4em rgb(15, 15, 15);
+    padding: 10px;
+}
+
+
+.sqlimg{
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: auto;
+    left: 94%;
+    top: 30%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    100%{ transform: rotateY(360deg);}
+}
+
+
+    #whatissql {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+      }
+      
+      #whatissql::before, #whatissql::after {
+        flex: 1;
+        content: '';
+        padding: 3px;
+        background-color: limegreen;
+        margin: 5px;
+      }
+
+
+footer{
+    background-color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: -1200px;
+    left: 0;
+    width: 100%;
+    
+}
