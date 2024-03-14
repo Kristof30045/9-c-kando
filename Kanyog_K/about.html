@@ -6,12 +6,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    <title>Vue.js Wiki About</title>
+    <title>Vue.js Wiki</title>
     <style>
         body {
             background-color: #1a1a1a;
             color: #909293;
-            text-align: justify;
         }
 
         .navbar, .nav-link, .navbar-brand{
@@ -23,48 +22,38 @@
             color: #386a69;
         }
 
-        .hr-custom{
-            margin: 0 auto;
-            color : white;
-        }
-
-        h1{
-            color: #404040;
-        }
-
-        h2{text-align: center;}
-
         .gradient-text {
             background-image: linear-gradient(to right, rgba(66,211,146,255), rgba(95,139,238,255));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-          }
+        }
+          
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://kristof30045.github.io/9-c-kando/main_page_(dontnyulnihozza)/index.html">Main Page</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-          </button>
-          <div class=" navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-      
-      <div class="container text-center d-flex justify-content-center d-md-block">
-        <h1 class="gradient-text">Frequently Asked Questions</h1>
+  <nav class="navbar navbar-expand-lg sticky-top col-sm">
+    <div class="container-fluid col-sm">
+      <a class="navbar-brand" href="https://kristof30045.github.io/9-c-kando/main_page_(dontnyulnihozza)/index.html">fő oldal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Az oldalról</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="learn.html">Vue.js tanulása</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div class="container text-center col-sm">
+        <h1 class="gradient-text">Gyakran Ismételt Kérdések</h1>
       </div>
 
       <div class="container mt-auto py-3">
@@ -72,80 +61,85 @@
       </div>
       
       <div class="container">
-        <h2>Who maintains Vue?</h2>
-        <p>Vue is an independent, community-driven project. It was created by Evan You in 2014 as a personal side project. Today, Vue is actively maintained by a team of both full-time and volunteer members from all around the world, where Evan serves as the project lead. You can learn more about the story of Vue in this documentary.</p>
-        <p>Vue's development is primarily funded through sponsorships and we have been financially sustainable since 2016. If you or your business benefit from Vue, consider sponsoring us to support Vue's development!</p>
+        <h2>Ki tartja fenn a Vue-t?</h2>
+        <p>A Vue egy független, közösség által irányított projekt. Evan You 2014-ben hozta létre, mint egyéni mellékprojektjét. Manapság a Vue-t egy lelkes, teljes munkaidős és önkéntes tagokból álló csapat tartja fenn a világ minden tájáról, ahol Evan a projektvezető. A Vue történetéről ebben a dokumentumfilmben tudhatsz meg többet.</p>
+        <p>A Vue fejlesztését elsősorban támogatások finanszírozzák, és 2016 óta pénzügyileg fenntarthatóak vagyunk. Amennyiben Ön vagy vállalkozása hasznot húz a Vue-ból, fontolja meg támogatásunkat a Vue fejlesztésének elősegítésére!</p>
 
         <hr class="hr-custom">
-        <h2>What's the difference between Vue 2 and Vue 3?</h2>
-        <p>Vue 3 is the current, latest major version of Vue. It contains new features that are not present in Vue 2, such as Teleport, Suspense, and multiple root elements per template. It also contains breaking changes that make it incompatible with Vue 2. Full details are documented in the Vue 3 Migration Guide.</p>
-        <p>Despite the differences, the majority of Vue APIs are shared between the two major versions, so most of your Vue 2 knowledge will continue to work in Vue 3. Notably, Composition API was originally a Vue-3-only feature, but has now been backported to Vue 2 and is available in Vue 2.7.</p>
-        In general, Vue 3 provides smaller bundle sizes, better performance, better scalability, and better TypeScript / IDE support. If you are starting a new project today, Vue 3 is the recommended choice. There are only a few reasons for you to consider Vue 2 as of now:
-        <ul><li>You need to support IE11. Vue 3 leverages modern JavaScript features and does not support IE11.</li></ul>
-        <p>If you intend to migrate an existing Vue 2 app to Vue 3, consult the migration guide.</p>
+        <h2>Mi a különbség a Vue 2 és a Vue 3 között?</h2>
+        <p>A Vue 3 a Vue jelenlegi, legújabb főverziója. Olyan új funkciókat tartalmaz, amelyek a Vue 2-ben nincsenek meg, mint például a Teleport, a Suspense és a sablononkénti több gyökérelem. Ezenkívül olyan törésváltoztatásokat is tartalmaz, amelyek miatt nem kompatibilis a Vue 2-vel. A teljes részleteket a Vue 3 Migrációs útmutató dokumentálja.</p>
+
+        <p>A különbségek ellenére a Vue API-k többsége megosztott a két fő verzió között, így a Vue 2 ismereteid nagy része továbbra is működni fog a Vue 3-ban. Fontos megjegyezni, hogy a Composition API eredetileg csak a Vue 3 sajátja volt, azonban visszaportolták a Vue 2-re is, így elérhető a Vue 2.7-ben.</p>
+
+        Általánosságban elmondható, hogy a Vue 3 kisebb csomagméreteket, jobb teljesítményt, jobb skálázhatóságot és jobb TypeScript/IDE támogatást kínál. Ha ma indítasz egy új projektet, a Vue 3 az ajánlott választás. Jelenleg csak néhány okod lehet a Vue 2 mellett dönteni:
+        <ul><li>IE11 támogatása szükséges. A Vue 3 modern JavaScript funkciókat használ, amelyek nem kompatibilisek az IE11 böngészővel.</li></ul>
+
+        <p>Ha egy meglévő Vue 2 alkalmazást szeretne Vue 3-ra áttelepíteni, tekintse meg a migrációs útmutatót.</p>
 
         <hr class="hr-custom">
-        <h2>Is Vue 2 Still Supported?</h2>
-        <p>Vue 2.7, which was shipped in July 2022, is the final minor release of the Vue 2 version range. Vue 2 has now entered maintenance mode: it will no longer ship new features, but will continue to receive critical bug fixes and security updates for 18 months starting from the 2.7 release date. This means Vue 2 will reach End of Life on December 31st, 2023.</p>
-        <p>We believe this should provide plenty of time for most of the ecosystem to migrate over to Vue 3. However, we also understand that there could be teams or projects that cannot upgrade by this timeline while still needing to fulfill security and compliance requirements. We are partnering with industry experts to provide extended support for Vue 2 for teams with such needs - if your team expects to be using Vue 2 beyond the end of 2023, make sure to plan ahead and learn more about Vue 2 Extended LTS.</p>
+        <h2>Vue 2 Még mindig támogatott?</h2>
+        <p>A Vue 2.7 kiadás, amely 2022 júliusában jelent meg, a Vue 2 verzió utolsó alverziója. A Vue 2 így átlépett a karbantartási fázisba: innentől kezdve nem érkeznek hozzá új funkciók, viszont a 2.7-es kiadás dátumától számított 18 hónapon keresztül továbbra is megkapja a kritikus hibajavításokat és biztonsági frissítéseket. Ez azt jelenti, hogy a Vue 2 elérte az életciklusa végét (End of Life) 2023. december 31-én.</p>
+
+        <p>Úgy gondoljuk, hogy ez elegendő időt biztosít az ökoszisztéma nagy részének a Vue 3-ra való áttérésre. Ugyanakkor azt is megértjük, hogy lehetnek olyan csapatok vagy projektek, amelyek nem tudnak frissíteni ebben az ütemtervben, miközben továbbra is teljesíteniük kell a biztonsági és megfelelőségi követelményeket. Ipari szakértőkkel együttműködve kiterjesztett támogatást biztosítunk a Vue 2 számára az ilyen igényekkel rendelkező csapatok számára - ha a csapata várhatóan 2023 vége után is használni fogja a Vue 2-t, mindenképpen tervezzen előre, és tudjon meg többet a Vue 2 Extended LTS-ről.</p>
 
         <hr class="hr-custom">
-        <h2>What license does Vue use?</h2>
-        <p>Vue is a free and open source project released under the MIT License.</p>
+        <h2>Milyen licencet használ a Vue?</h2>
+        <p>A Vue egy ingyenes és nyílt forráskódú projekt, mely a  MIT Licenc alatt lett kiadva.</p>
 
         <hr class="hr-custom">
-        <h2>What browsers does Vue support?</h2>
-        <p>The latest version of Vue (3.x) only supports browsers with native ES2015 support. This excludes IE11. Vue 3.x uses ES2015 features that cannot be polyfilled in legacy browsers, so if you need to support legacy browsers, you will need to use Vue 2.x instead.</p>
+        <h2>Milyen böngészőket támogat a Vue?</h2>
+        <p>
+          A Vue legújabb verziója (3.x) csak olyan böngészőket támogat, amelyek natívan támogatják az ES2015 szabványt. Ez kizárja az Internet Explorer 11-et (IE11). A Vue 3.x olyan ES2015 funkciókat használ, amelyek nem emulálhatók (polyfill) a régebbi böngészőkben. Tehát, ha régi böngészőket kell támogatnia, továbbra is a Vue 2.x verziót kell használnia.</p>
 
         <hr class="hr-custom">
-        <h2>Is Vue reliable?</h2>
-        <p>Vue is a mature and battle-tested framework. It is one of the most widely used JavaScript frameworks in production today, with over 1.5 million users worldwide, and is downloaded close to 10 million times a month on npm.</p>
-        <p>Vue is used in production by renowned organizations in varying capacities all around the world, including Wikimedia Foundation, NASA, Apple, Google, Microsoft, GitLab, Zoom, Tencent, Weibo, Bilibili, Kuaishou, and many more.</p>
+        <h2>Megbízható a Vue?</h2>
+        <p>A Vue egy érett és harcban kipróbált keretrendszer. Napjainkban az egyik legszélesebb körben használt JavaScript-keretrendszer, világszerte több mint 1,5 millió felhasználója van, és havonta közel 10 milliószor töltik le az npm-ről.</p>
+        <p>A Vue-t világszerte neves szervezetek használják különböző minőségben, többek között a Wikimedia Foundation, a NASA, az Apple, a Google, a Microsoft, a GitLab, a Zoom, a Tencent, a Weibo, a Bilibili, a Kuaishou és még sokan mások.</p>
 
         <hr class="hr-custom">
-        <h2>Is Vue fast?</h2>
-        <p>Vue 3 is one of the most performant mainstream frontend frameworks, and handles most web application use cases with ease, without the need for manual optimizations.</p>
-        <p>In stress-testing scenarios, Vue outperforms React and Angular by a decent margin in the js-framework-benchmark. It also goes neck-and-neck against some of the fastest production-level non-Virtual-DOM frameworks in the benchmark.</p>
-        <p>Do note that synthetic benchmarks like the above focus on raw rendering performance with dedicated optimizations and may not be fully representative of real-world performance results. If you care more about page load performance, you are welcome to audit this very website using WebPageTest or PageSpeed Insights. This website is powered by Vue itself, with SSG pre-rendering, full page hydration and SPA client-side navigation. It scores 100 in performance on an emulated Moto G4 with 4x CPU throttling over slow 4G networks.</p>
-        <p>You can learn more about how Vue automatically optimizes runtime performance in the Rendering Mechanism section, and how to optimize a Vue app in particularly demanding cases in the Performance Optimization Guide.</p>
+        <h2>Gyors a Vue?</h2>
+        <p>A Vue 3 az egyik legteljesítményesebb mainstream frontend keretrendszer, és a legtöbb webes alkalmazás felhasználási esetét könnyedén kezeli, manuális optimalizálás nélkül.</p>
+        <p>A stressztesztelési forgatókönyvek szerint a Vue a js-framework-benchmarkban tisztességes mértékben felülmúlja a React és az Angular teljesítményét. A benchmarkban a leggyorsabb, nem virtuális-DOM keretrendszerekkel is fej-fej mellett halad a leggyorsabb gyártási szintű, nem virtuális-DOM keretrendszerekkel szemben.</p>
+        <p>Ne feledje, hogy a fenti szintetikus benchmarkok a nyers renderelési teljesítményre összpontosítanak dedikált optimalizációkkal, és nem biztos, hogy teljes mértékben reprezentálják a valós teljesítményt. Ha jobban érdekli az oldalbetöltési teljesítmény, akkor szívesen látjuk, ha a WebPageTest vagy a PageSpeed Insights segítségével éppen ezt a weboldalt vizsgálja. Ezt a weboldalt maga a Vue hajtja, SSG előrendezéssel, teljes oldalhidratálással és SPA kliensoldali navigációval. Egy emulált Moto G4-en 100-as teljesítményt ér el, 4x CPU throttlinggal, lassú 4G hálózatokon.</p>
+        <p>A Rendering Mechanism részben többet megtudhat arról, hogyan optimalizálja a Vue automatikusan a futási idejű teljesítményt, és hogyan optimalizálhat egy Vue-alkalmazást különösen igényes esetekben a Performance Optimization Guide (Teljesítményoptimalizálási útmutató) című fejezetben.</p>
 
         <hr class="hr-custom">
-        <h2>Is Vue lightweight?</h2>
-        <p>When you use a build tool, many of Vue's APIs are "tree-shakable". For example, if you don't use the built-in <Transition> component, it won't be included in the final production bundle.</p>
-        <p>A hello world Vue app that only uses the absolutely minimal APIs has a baseline size of only around 16kb, with minification and brotli compression. The actual size of the application will depend on how many optional features you use from the framework. In the unlikely case where an app uses every single feature that Vue provides, the total runtime size is around 27kb.</p>
-        <p>When using Vue without a build tool, we not only lose tree-shaking, but also have to ship the template compiler to the browser. This bloats up the size to around 41kb. Therefore, if you are using Vue primarily for progressive enhancement without a build step, consider using petite-vue (only 6kb) instead.</p>
-        <p>Some frameworks, such as Svelte, use a compilation strategy that produces extremely lightweight output in single-component scenarios. However, our research shows that the size difference heavily depends on the number of components in the application. While Vue has a heavier baseline size, it generates less code per component. In real-world scenarios, a Vue app may very well end up being lighter.</p>
+        <h2>Könnyű a Vue?</h2>
+        <p>Ha egy építőeszközt használsz, a Vue számos API-ja "fa-rázható". Például, ha nem használja a beépített <Transition> komponenst, az nem kerül bele a végleges gyártmánycsomagba.</p>
+        <p>Egy hello world Vue alkalmazás, amely csak az abszolút minimális API-kat használja, alapesetben csak 16kb körüli méretű, kicsinyítéssel és brotli tömörítéssel. Az alkalmazás tényleges mérete attól függ, hogy hány opcionális funkciót használsz a keretrendszerből. Abban a valószínűtlen esetben, amikor egy alkalmazás minden egyes funkciót használ, amit a Vue biztosít, a teljes futásidejű méret 27kb körül van.</p>
+        <p>Ha a Vue-t build eszköz nélkül használjuk, akkor nem csak a tree-shakinget veszítjük el, hanem a sablonfordítót is el kell küldenünk a böngészőnek. Ez körülbelül 41kb-ra duzzasztja a méretet. Ezért, ha a Vue-t elsősorban progresszív bővítésre használod build lépés nélkül, fontold meg helyette a petite-vue használatát (mindössze 6kb).</p>
+        <p>Néhány keretrendszer, például a Svelte, olyan fordítási stratégiát használ, amely rendkívül könnyű kimenetet eredményez az egykomponensű forgatókönyvekben. Kutatásaink azonban azt mutatják, hogy a méretkülönbség erősen függ az alkalmazásban lévő komponensek számától. Míg a Vue nehezebb alapmérettel rendelkezik, komponensenként kevesebb kódot generál. Valós forgatókönyvekben egy Vue alkalmazás nagyon is lehet, hogy végül könnyebb lesz..</p>
 
         <hr class="hr-custom">
-        <h2>Does Vue scale?</h2>
-        <p>Yes. Despite a common misconception that Vue is only suitable for simple use cases, Vue is perfectly capable of handling large scale applications:</p>
+        <h2>A Vue skálázható?</h2>
+        <p>Igen. Annak ellenére, hogy gyakran tévhit, hogy a Vue csak egyszerű felhasználási esetekre alkalmas, a Vue tökéletesen alkalmas nagyméretű alkalmazások kezelésére:</p>
         <ul>
-            <li>Single-File Components provide a modularized development model that allows different parts of an application to be developed in isolation.</li>
-            <li>Composition API provides first-class TypeScript integration and enables clean patterns for organizing, extracting and reusing complex logic.</li>
-            <li>Comprehensive tooling support ensures a smooth development experience as the application grows.</li>
-            <li>Lower barrier to entry and excellent documentation translate to lower onboarding and training costs for new developers.</li>
+            <li>Az egyfájlos komponensek moduláris fejlesztési modellt biztosítanak, amely lehetővé teszi, hogy az alkalmazás különböző részeit elszigetelten fejlesszük.</li>
+            <li>A Composition API első osztályú TypeScript-integrációt biztosít, és tiszta mintákat tesz lehetővé az összetett logika szervezéséhez, kivonásához és újrafelhasználásához.</li>
+            <li>Az átfogó eszköztámogatás biztosítja a zökkenőmentes fejlesztést az alkalmazás növekedésével párhuzamosan.</li>
+            <li>Az alacsonyabb belépési korlát és a kiváló dokumentáció az új fejlesztők számára alacsonyabb belépési és képzési költségeket eredményez.</li>
         </ul>
 
         <hr class="hr-custom">
-        <h2>How do I contribute to Vue?</h2>
-        <p>We appreciate your interest! Please check out our Community Guide.</p>
+        <h2>Hogyan járulhatok hozzá a Vue-hoz?</h2>
+        <p>Nagyra értékeljük érdeklődését! Kérjük, tekintse meg a Közösségi útmutatót.</p>
 
         <hr class="hr-custom">
-        <h2>Should I use Options API or Composition API?</h2>
-        <p>If you are new to Vue, we provide a high-level comparison between the two styles here.</p>
-        <p>If you have previously used Options API and are currently evaluating Composition API, check out this FAQ.</p>
+        <h2>Az Options API-t vagy a Composition API-t használjam?</h2>
+        <p>Ha még nem ismeri a Vue-t, itt talál egy magas szintű összehasonlítást a két stílus között.</p>
+        <p>Ha korábban már használta az Options API-t, és jelenleg a Composition API-t értékeli.</p>
 
         <hr class="hr-custom">
-        <h2>Should I use JavaScript or TypeScript with Vue?</h2>
-        <p>While Vue itself is implemented in TypeScript and provides first-class TypeScript support, it does not enforce an opinion on whether you should use TypeScript as a user.</p>
-        <p>TypeScript support is an important consideration when new features are added to Vue. APIs that are designed with TypeScript in mind are typically easier for IDEs and linters to understand, even if you aren't using TypeScript yourself. Everybody wins. Vue APIs are also designed to work the same way in both JavaScript and TypeScript as much as possible.</p>
-        <p>Adopting TypeScript involves a trade-off between onboarding complexity and long-term maintainability gains. Whether such a trade-off can be justified can vary depending on your team's background and project scale, but Vue isn't really an influencing factor in making that decision.</p>
+        <h2>JavaScriptet vagy TypeScriptet használjak a Vue-val?</h2>
+        <p>Míg a Vue maga TypeScriptben van implementálva, és első osztályú TypeScript-támogatást nyújt, nem kényszerít ki véleményt arról, hogy felhasználóként érdemes-e TypeScriptet használni.</p>
+        <p>A TypeScript-támogatás fontos szempont, amikor új funkciókat adunk hozzá a Vue-hoz. A TypeScript figyelembevételével tervezett API-kat általában könnyebb megérteni az IDE-k és a linterek számára, még akkor is, ha nem használnak TypeScriptet saját maguk. Mindenki nyer. A Vue API-kat is úgy tervezték, hogy a lehető legnagyobb mértékben ugyanúgy működjenek JavaScriptben és TypeScriptben is.</p>
+        <p>A TypeScript bevezetése kompromisszumot jelent a bevezetés bonyolultsága és a hosszú távú karbantarthatósági előnyök között. Az, hogy egy ilyen kompromisszum indokolt-e, a csapat hátterétől és a projekt méretétől függően változhat, de a Vue nem igazán befolyásoló tényező a döntés meghozatalában.</p>
 
         <hr class="hr-custom">
-        <h2>How does Vue compare to Web Components?</h2>
-        <p>Vue was created before Web Components were natively available, and some aspects of Vue's design (e.g. slots) were inspired by the Web Components model.</p>
-        <p>The Web Components specs are relatively low-level, as they are centered around defining custom elements. As a framework, Vue addresses additional higher-level concerns such as efficient DOM rendering, reactive state management, tooling, client-side routing, and server-side rendering.</p>
-        <p>Vue also fully supports consuming or exporting to native custom elements - check out the Vue and Web Components Guide for more details.</p>
+        <h2>Hogyan viszonyul a Vue a webkomponensekhez?</h2>
+        <p>A Vue még azelőtt készült, hogy a webkomponensek natívan elérhetővé váltak volna, és a Vue tervezésének egyes aspektusait (pl. a slotokat) a webkomponensek modellje ihlette.</p>
+        <p>A Webkomponensek specifikáció viszonylag alacsony szintű, mivel az egyéni elemek definiálására összpontosít. A Vue mint keretrendszer további, magasabb szintű problémákkal foglalkozik, mint például a hatékony DOM renderelés, a reaktív állapotkezelés, az eszközkezelés, a kliensoldali útválasztás és a szerveroldali renderelés.</p>
+        <p>A Vue teljes mértékben támogatja a natív egyéni elemek fogyasztását vagy exportálását is - további részletekért tekintse meg a Vue and Web Components Guide-ot.</p>
       </div>
 
 
