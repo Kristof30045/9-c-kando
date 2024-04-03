@@ -1,0 +1,20 @@
+body{
+    background-image: url(https://www.brightpips.com/wp-content/uploads/2015/06/scratch-lets-your-kid-learn-coding-online-for-free-heres-how.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+text-align: center;
+font-size: 32pt;
+font-style: italic;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    text-align: center;
+font-size: 30pt;
+font-style: italic;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-size: 12pt;
+}
