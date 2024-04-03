@@ -5,18 +5,6 @@ body{
     font-family: "Madimi One", sans-serif;;
 }
 
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-
 .sticky{
     position: fixed;
     width: 100%;
@@ -54,8 +42,10 @@ nav a{
     vertical-align: top;
     text-decoration: none;
     text-align: center;
-    transition: all .1s ease-in-out;
+    text-decoration: none;
+    transition: 1s;
 }
+
 
 a:hover{
     border-bottom: 2px solid limegreen;
@@ -70,20 +60,10 @@ a:active{
     padding-right: 10px;
 }
 
-
-
-.container{
-    background-color: rgba(185, 194, 186, 0.335);
-    border-radius: 50px;
-    color: white;
-    height: 1500px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    box-shadow: 3px 3px limegreen, -1em 0 .4em rgb(15, 15, 15);
-    padding: 10px;
+p{
+    width: 83%;
 }
+
 
 
 .sqlimg{
@@ -100,14 +80,20 @@ a:active{
     100%{ transform: rotateY(360deg);}
 }
 
+.textbox{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
-    #whatissql {
+
+    .whatissql {
         font-size: 30px;
         display: flex;
         align-items: center;
+        margin-top: 100px;
       }
       
-      #whatissql::before, #whatissql::after {
+      .whatissql::before, .whatissql::after {
         flex: 1;
         content: '';
         padding: 3px;
@@ -115,6 +101,30 @@ a:active{
         margin: 5px;
       }
 
+      ul{
+        list-style: decimal;
+        text-align: left;
+      }
+      li{
+        padding: 10px;
+      }
+
+      .sql-type{
+        background-color: rgb(37, 35, 35) !important;
+        color: white !important;
+        border-radius: 4px !important;
+        box-shadow: none !important;
+      }
+
+
+      .MySQL-logo-div {
+        border-radius: 25px;
+        border:  10px solid rgb(47, 45, 45);
+        display: block;
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
 footer{
     background-color: gray;
@@ -125,6 +135,6 @@ footer{
     position: absolute;
     bottom: -1200px;
     left: 0;
-    width: 100%;
+    width: 115%;
     
 }
