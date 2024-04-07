@@ -181,7 +181,6 @@ body{
 CSHARPimg{
     width: 250px;
     height: 249px;
-    right: 25px;
     position: relative;
     transition: 2s;
 }
