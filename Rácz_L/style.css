@@ -1,0 +1,20 @@
+body{
+    background-image: url(háttérkép.png);
+}
+#content{
+  background:linear-gradient(to bottom, blue, yellow);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  width: 930px;
+  height: 800px;
+}
+img{
+    width: 200px;
+    float: left;
+}
+p{
+    
+}
