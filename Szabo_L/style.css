@@ -1,0 +1,143 @@
+.top {
+	display: flex;
+	justify-content: center;
+	background-color: #664FA1;
+	gap: 25px;
+	
+}
+
+.top a {
+	display: block;
+	color: #664FA1;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #E7DEF7;
+	border-radius: 25px;
+}
+
+.top a:hover {
+	background-color: #B59DF7;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background-color: #E7DEF7;
+}
+
+.background {
+	background-image: url('lualogo.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+	filter: blur(.3rem);
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #664FA1;
+	text-align: center;
+    color: #E7DEF7;
+}
+
+footer button {
+    background-color: #22ca46;
+    border-radius: 10px;
+    border: none;
+    color: black;
+	cursor: pointer;
+}
+
+#dialogus {
+    padding: 1rem;
+    position: relative;
+    background-color: #664FA1;
+    border-radius: 10px;
+	border: solid 2px black;
+}
+
+#dialogus p {
+    text-align: center;
+	color: #E7DEF7;
+	
+}
+
+
+.modalButton {
+    border-radius: 25px;
+    border: none;
+    font-weight: bolder;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+	cursor: pointer;
+}
+
+#kuld {
+    background-color:#E7DEF7;
+    border-radius: 7px;
+    border: none;
+	cursor: pointer;
+}
+
+.kozos {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50rem;
+	z-index: -1;
+}
+
+.szoveg {
+	display: flex;
+	justify-content: start;
+	background-color: #664FA1;
+	width: 400px;
+	height: 350px;
+	color: #E7DEF7;
+	border-radius: 20px;
+	align-items: center;
+	flex-direction: column;
+}
+
+#torszov {
+    margin-bottom: 15px;
+}
+
+.szoveg2 {
+	display: flex;
+	justify-content: start;
+	background-color: #664FA1;
+	width: 400px;
+	height: 350px;
+	color: #E7DEF7;
+	border-radius: 20px;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.szoveg2 li {
+    align-self: flex-start;
+    margin-left: 35px;
+}
+
+.szoveg li {
+    align-self: flex-start;
+    margin-left: 35px;
+}

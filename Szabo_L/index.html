@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lua</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="dolgok.js"></script>
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <div class="top">
+    <a href="index.html">Lua</a>
+    <a href="mialua.html">Mi a Lua?</a>
+  </div>
+
+  <dialog id="dialogus">
+    <button class="modalButton" onclick="closeModal()">X</button>
+    <form action="">
+      <p>Írd be az E-mail címed.</p>
+      <input placeholder="szabol1@kkszki.hu" type="text" id="asd" />
+      <button id="kuld">Küldés</button>
+    </form>
+  </dialog>
+
+  <div class="kozos">
+    <div class="szoveg">
+      <h2 style="text-align: center">A lua történelme</h2>
+      <li id="torszov">Lua-t 1993-ban fejlesztették ki a PUC-Rio számítógéptudományi tanszékén. </li>
+      <li id="torszov">A nyelvet Roberto Ierusalimschy, Luiz Henrique de Figueiredo és Waldemar Celes alkotta meg. A név
+        "Lua" portugálul holdat jelent.</li>
+      <li id="torszov">Az eredeti cél az volt, hogy egy beágyazható szkriptnyelvet hozzanak létre, amelyet más
+        programokban is könnyen lehet használni.</li>
+      <li id="torszov">A nyelv kifejlesztése azért volt szükséges, mert a brazil törvények nem engedték meg a
+        kereskedelmi szoftverek importját, és ezért a helyi fejlesztőknek saját eszközöket kellett létrehozniuk.</li>
+    </div>
+    <div class="szoveg2">
+      <h2>Bevezetés a Lua-ba</h2>
+      <li id="torszov">A Lua egy könnyen megtanulható, magas szintű, könnyen integrálható és nagyon hatékony
+        programozási nyelv.</li>
+      <li id="torszov">Lua-t széles körben használják videojátékokban (például World of Warcraft, Angry Birds),
+        beágyazott rendszerekben, adatfeldolgozó rendszerekben és sok más területen, ahol a könnyű integrálhatóság és a
+        hatékonyság fontos szempont.</li>
+      <li>Lua könnyen integrálható C és C++ nyelvű alkalmazásokkal. Gyakran használják játékokban és más olyan
+        alkalmazásokban, ahol fontos a teljesítmény.</li>
+    </div>
+  </div>
+
+  <footer>
+    © Szabó Levente ⏐ 2024 ⏐ A weboldal csak tanulás céljából.
+    <button onclick="openModal()">Hírlevél</button>
+  </footer>
+</body>
+
+</html>
