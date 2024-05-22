@@ -1,47 +1,106 @@
-body {
+body{
+    padding-top: 56px;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: purple;
-    color: purple;
 }
-header {
-    background-color: greenyellow;
-    color: greenyellow;
-    padding: 20px;
-    text-align: center;
+header{
+    background-color: yellowgreen;
+    color: black;
+    padding: 20px 0;
 }
-nav {
-    background-color: purple;
-    padding: 10px;
-    text-align: center;
+header , h1{
+    font-size: 2.5em;
 }
-nav a {
-    color: greenyellow;
-    text-decoration: none;
-    margin: 0 10px;
+content{
+    margin: 20px 0;
 }
-nav a:hover {
-    color: pink;
+h2{
+    font-size: 2em;
 }
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: greenyellow;
-}
-footer {
-    background-color: purple;
-    color: purple;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-h1{
-    color: purple;
+p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 img{
-width: 325px;
-width: 325px;
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+a{
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: yellowgreen;
+}
+table,th,td{
+    border: 1px solid yellowgreen;
+}
+th,td{
+    padding: 8px;
+    text-align: center;
+}
+.newsletter{
+    background-color: yellowgreen;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: yellowgreen;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+}
+.no-underline{
+    text-decoration: none;
+}
+.custom-widt{
+    width: 200px;
+}
+.custom-height{
+    height: 200px;
+}
+.custom-margin{
+    margin: 20px;
+}
+.custom-padding{
+    padding: 20px;
+}
+.custom-border{
+    border: 2px solid black;
+}
+.custom-font-size{
+    font-size: 18px;
+}
+.custom-font-color{
+    color: black;
+}
+.custom-bg-color{
+    background-color: yellowgreen;
 }
