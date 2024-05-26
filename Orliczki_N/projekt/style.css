@@ -1,3 +1,8 @@
+body{
+    background-image: url(./assets/img/background.jpg);
+    background-size: cover;
+    color: white;
+}
 nav{
     display: flex;
     background-color: purple;
@@ -6,9 +11,13 @@ nav{
     margin-left: -10px;
 }
 
+nav li{
+    list-style: none;
+}
+
 li{
    padding: 10px;
-    list-style: none;
+    list-style: upper;
 }
 
 a{
@@ -21,7 +30,7 @@ footer{
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 0px;
+    bottom: -150px;
     left: 0;
-    width: 115%;
+    width: 100%;
 }

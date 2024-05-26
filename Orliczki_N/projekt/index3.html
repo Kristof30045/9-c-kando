@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>projekt.C#</title>
 </head>
 <body>
@@ -11,16 +13,126 @@
         <li><a href="index.html">Főoldal</a></li>
         <li><a href="index2.html">Tudnivalók</a></li>
         <li><a href="index3.html">Táblázat</a></li>
+        <li><a href="index4.html">Hírlevél</a></li>
     </nav>
 
+     <div class="container mt-3 col-sm-12 col-md-12 col-lg-12 mx-auto"> 
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="table-dark">Verziószám</th>
+                        <th class="table-dark">Megjelenés</th>
+                        <th class="table-dark">Főbb újdonságok</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2.0</td>
+                        <td>2005. november</td>
+                        <td>Generikus és parciális típusok, anonim metódusok, iterátorok</td>
+                    </tr>
+                    <tr>
+                        <td>3.0</td>
+                        <td>2006. november</td>
+                        <td>Implicit módon megadott lokális változók, lambda-, és lekérdezés-kifejezések, kifejezésfák, objektuminicializálók</td>
+                    </tr>
+                    <tr>
+                        <td>3.0</td>
+                        <td>2007. november</td>
+                        <td>Language Integrated Query, lambda-kifejezések, kiegészítő metódusok</td>
+                    </tr>
+                    <tr>
+                        <td>4.0</td>
+                        <td>2010. április</td>
+                        <td>Dinamikus kötés, opcionális paraméterek, generikus ko- és kontravariancia, Párhuzamos programozás támogatás, PLINQ</td>
+                    </tr>
+                    <tr>
+                        <td>5.0</td>
+                        <td>2012. augusztus</td>
+                        <td>Aszinkron feladatok, párhuzamos programozás továbbfejlesztése</td>
+                    </tr>
+                    <tr>
+                        <td>6.0</td>
+                        <td>2015. július</td>
+                        <td>Null kondicionális operátor, statikus importálás, csak olvasható auto tulajdonságok</td>
+                    </tr>
+                    <tr>
+                        <td>7.0</td>
+                        <td>2017. március</td>
+                        <td>Out változók, Tuple típus, Pattern matching, helyi metódusok, throw kifejezések</td>
+                    </tr>
+                    <tr>
+                        <td>7.1</td>
+                        <td>2017. augusztus</td>
+                        <td>aszinkron Main metódus</td>
+                    </tr>
+                    <tr>
+                        <td>7.2</td>
+                        <td>2017. november</td>
+                        <td>private protected hozzáférési szint, számok tagolásához használható a _ karakter</td>
+                    </tr>
+                    <tr>
+                        <td>7.3</td>
+                        <td>2018. május</td>
+                        <td>stackalloc tömb inicializáció</td>
+                    </tr>
+                    <tr>
+                        <td>8.0</td>
+                        <td>2019. szeptember</td>
+                        <td>Nullable referencia típusok</td>
+                    </tr>
+                    <tr>
+                        <td>9.0 <span style="background-color: purple;"  class="badge">Legújabb</span></td>
+                        <td>2020. szeptember</td>
+                        <td>Rekordtípusok, init only setterek, mintaillesztés, kódgenerátor</td>
+                    </tr>
+                </tbody>
+    
+            </table>
+    </div>
+</div>
 
 
 
 
 
 
-    <footer>
-        <p>&copy; Orliczki Norbert </p>
+
+
+
+    <footer style="color: black;">
+        <!-- Button to Open the Modal -->
+<button style="background-color: white; color: purple;" type="button" class="btn " data-bs-toggle="modal" data-bs-target="#myModal">
+    Infó
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div style="background-color: purple;" class="modal-header ">
+          <h4 class="modal-title">Információk</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Készítette: Orliczki Norbert <br>
+          Felhasználás csak tanulási célokra
+          <p>&copy;Minden jog fentartva 2024</p>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
     </footer>
     
 </body>
