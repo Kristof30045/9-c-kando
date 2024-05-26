@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    color: aqua;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image:url(pexels-markus-spiske-6212801.jpg) ;
+}
+h2{
+    color: aquamarine;
+    text-align: center;
+}
+ p{
+    color: azure;
+    margin-right:600px;
+    text-align: justify;
+ }
+ .img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .round-button {
+     display: inline-block;
+     width: 100px;
+     height: 100px;
+     line-height: 100px;
+     border-radius: 50%;
+     font-size: 20px;
+     color: white;
+     text-align: center;
+     background: rgb(132, 233, 227);
+     border: none;
+     cursor: pointer;
+     transition: background 0.3s;
+
+ }
+
+ .round-button:hover {
+     background: rgb(43, 221, 237);
+ }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
