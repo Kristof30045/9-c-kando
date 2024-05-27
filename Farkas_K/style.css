@@ -1,10 +1,10 @@
 body{
     padding-top: 56px;
     font-family: Arial, sans-serif;
-    background-color: purple;
+    background-color: white;
 }
 header{
-    background-color: yellowgreen;
+    background-color: gray;
     color: black;
     padding: 20px 0;
 }
@@ -28,7 +28,7 @@ img{
     margin: auto;
 }
 a{
-    color: yellowgreen;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
@@ -43,17 +43,17 @@ table{
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    background-color: yellowgreen;
+    background-color: white;
 }
 table,th,td{
-    border: 1px solid yellowgreen;
+    border: 1px solid white;
 }
 th,td{
     padding: 8px;
     text-align: center;
 }
 .newsletter{
-    background-color: yellowgreen;
+    background-color: gray;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -63,7 +63,7 @@ h2{
     margin-bottom: 20px;
 }
 footer{
-    background-color: yellowgreen;
+    background-color: gray;
     color: black;
     padding: 10px 0;
     text-align: center;
@@ -102,5 +102,5 @@ footer{
     color: black;
 }
 .custom-bg-color{
-    background-color: yellowgreen;
+    background-color: white;
 }
