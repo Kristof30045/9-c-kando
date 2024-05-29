@@ -12,13 +12,15 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#overview">Áttekintés</a></li>
+            <li><a href="#overview">Bevezetés</a></li>
             <li><a href="#features">Jellemzők</a></li>
             <li><a href="#resources">Források</a></li>
+            <li><a href="#resources">Táblázat</a></li>
+            <li><a href="#features">Hírlevél</a></li>
         </ul>
     </nav>
     <section id="overview">
-        <h2>Áttekintés</h2>
+        <h2>Bevezetés</h2>
         <p>A GO egy nyílt forráskódú programozási nyelv, amelyet a Google fejlesztett ki. Jellemzői közé tartozik a hatékony és gyors kódolás, a könnyű érthetőség és a párhuzamos feldolgozás támogatása.
         <p>A programozási nyelv a számítástechnikában használt olyan, ember által is értelmezhető utasítások sorozata, amivel közvetlenül, vagy közvetve (például: gépi kódra fordítás után) közölhetjük a számítógéppel egy adott feladat elvégzésének módját.</p>
 
@@ -38,14 +40,82 @@
 
         <h2>Források</h2>
         <ul>
-            <li><a href="https://golang.org/">Hivatalos GO weboldal</a></li>
-            <li><a href="https://tour.golang.org/">GO interaktív útmutató</a></li>
-            <li><a href="https://github.com/golang/go">GO GitHub repository</a></li>
+            <li><a target="_blank" href="https://golang.org/">Hivatalos GO weboldal</a></li>
+            <li><a target="_blank" href="https://tour.golang.org/">GO interaktív útmutató</a></li>
+            <li><a target="_blank" href="https://github.com/golang/go">GO GitHub repository</a></li>
         </ul>
     </section>
 
-    <footer>
-        <p>Készítette: Farkas Balázs a weboldal csak tanulás céljából 2024 </p>
-    </footer>
+    <h2>Táblázat</h2>
+
+    <table>
+
+        <tr>
+            <th>Előnyök</th>
+            <th>Hátrányok</th>
+        </tr>
+        <tr>
+            <td>Egyszerű szintaxis, amely megkönnyíti a tanulást és a kódolást</td>
+            <td>Hiányzik a generikus típusok támogatása (bár ez javítás alatt áll és várható a jövőben)</td>
+        </tr>
+        <tr>
+            <td>Gyors kompilációs idő</td>
+            <td>Korlátozott metaprogramozási képességek</td>
+        </tr>
+        <tr>
+            <td>Beépített támogatás a párhuzamos programozáshoz (goroutine-ok és csatornák)</td>
+            <td>A standard könyvtár nem annyira kiterjedt, mint néhány más programozási nyelv esetében</td>
+        </tr>
+        <tr>
+            <td>Erős eszközök és beépített csomagkezelő (pl. <code>go build</code>, <code>go test</code>, <code>go mod</code>)</td>
+            <td>Néhány fejlett nyelvi funkció, mint például a mintaillesztés vagy opcionális paraméterek hiánya</td>
+        </tr>
+        <tr>
+            <td>Hatékony memóriakezelés szemétgyűjtéssel</td>
+            <td>A hibakezelés manuális, ami néha verbose és repetitív kódot eredményezhet</td>
+        </tr>
+        <tr>
+            <td>Könnyen telepíthető önálló bináris fájlok létrehozása</td>
+            <td>Az objektum-orientált programozási funkciók korlátozottak</td>
+        </tr>
+        <tr>
+            <td>Nagy teljesítmény és alacsony memóriafogyasztás</td>
+            <td>Kevesebb harmadik fél által készített könyvtár és csomag, mint más nyelvek esetében</td>
+        </tr>
+        <tr>
+            <td>Platformfüggetlenség és könnyű telepíthetőség különböző operációs rendszerekre</td>
+            <td>A fejlesztői közösség kisebb, mint például a JavaScript vagy Python közösségek</td>
+        </tr>
+    </table>
+
+  <section>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="newsletter">
+                <h2 id="hirlevel">Hírlevél Feliratkozás</h2>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <label for="name">Név:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="privacy" required>
+                        <label class="form-check-label" for="privacy">Elfogadom az adatvédelmi szabályzatot</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Feliratkozás</button>
+                    <footer class="footer">
+                        <p>A weboldal okatatási célból készült <a target="_blank" class="fst-italic" href="https://www.kkszki.hu/">Miskolci SZC Kandó Kálmán Informatikai Technikum</p>
+                        <p>&copy; Készítette: Farkas Balázs</p>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
