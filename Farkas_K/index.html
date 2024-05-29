@@ -3,140 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Programnyelv</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Swift programnyelv</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header text-center">
-        <h1>Swift Programnyelv</h1>
+    
+        <nav>
+        <ul id="ul">
+            <li><a href="#swift">Swift</a></li>
+            <li><a href="#alapok">Nyelvi alapok</a></li>
+            <li><a href="#elony">Előny/Hátrány</a></li>
+            <li><a href="#hirlevel">Hírlevél</a></li>
+        </ul>
+        </nav>
+        
+    <header>
+        <h1 class="text-center">Swift programnyelv</h1>
     </header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="">Swift</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="about">Rólunk</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="features">Funkciók</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparison">Összehasonlítás</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="newsletter">Hírlevél</a>
-                </li>
-            </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 szoveeg">
+                <h2 id="swift">Mi a swift?</h2>
+                <p>A <a href="https://developer.apple.com/swift/">Swift</a> egy modern programozási nyelv, amelyet az Apple fejlesztett ki az <i>iOS</i>, <i>macOS</i>, <i>watchOS</i> és <i>tvOS</i> alkalmazásokhoz. 2014-ben mutatták be, és gyorsan népszerűvé vált könnyen érthető szintaxisa és erőteljes funkciói miatt.</p>
+                <p>A Swift biztonságos és nagy teljesítményű, lehetővé téve a gyors és megbízható kódolást. Az interaktív fejlesztési környezetek, mint a Playground, valós idejű visszajelzést biztosítanak, megkönnyítve a tanulást és a hibajavítást.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="SWIFT KEP.jpg" alt="swift logo">
+            </div>
         </div>
-    </nav>
-
-    <div class="container content">
-        <section id="about" class="my-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Rólunk</h2>
-                    <p>A Swift egy erős és intuitív programozási nyelv az Apple eszközeihez, amely modern funkcionalitást biztosít és egyszerűbbé teszi a kódolást.</p>
-                    <img src="swift logó.webp" alt="Swift logo" >
-                    <p>További információkat <a href="https://developer.apple.com/swift/" target="_blank">itt</a> találhatsz.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="features" class="my-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Funkciók</h2>
-                    <ul>
-                        <li class="bold">Gyors és hatékony</li>
-                        <li class="italic">Biztonságos</li>
-                        <li class="underline">Modern szintaxis</li>
-                        <li class="no-underline">Nyílt forráskódú</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="comparison" class="my-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Összehasonlítás más nyelvekkel</h2>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Funkció</th>
-                                <th>Swift</th>
-                                <th>Objective-C</th>
-                                <th>Python</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="custom-font-color">Teljesítmény</td>
-                                <td>Magas</td>
-                                <td>Közepes</td>
-                                <td>Közepes</td>
-                            </tr>
-                            <tr>
-                                <td class="custom-bg-color">Biztonság</td>
-                                <td>Kiemelkedő</td>
-                                <td>Közepes</td>
-                                <td>Magas</td>
-                            </tr>
-                            <tr>
-                                <td>Szintaxis</td>
-                                <td>Modern</td>
-                                <td>Elavult</td>
-                                <td>Egyszerű</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <section id="newsletter" class="my-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="newsletter">
-                        <h2>Hírlevél Feliratkozás</h2>
-                        <form id="newsletter-form">
-                            <div class="form-group">
-                                <label for="name">Név:</label>
-                                <input type="text" class="form-control" id="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">E-mail:</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="privacy" required>
-                                <label class="form-check-label" for="privacy">Elfogadom az adatvédelmi szabályzatot</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary mt-2">Feliratkozás</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
+<br>
+<hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 szoveeg">
+                <h2 id="alapok">Nyelvi alapok</h2>
+                <h5><b>Főbb Jellemzők</b></h5>
+                <ul>
+                    <li><u>Modern szintaxis:</u> A Swift tiszta és olvasható kódszerkezetet kínál, amely egyszerűbbé teszi a fejlesztést és a karbantartást.</li>
+                    <li><u>Típusbiztonság:</u> A Swift erős típusellenőrzéssel rendelkezik, ami segít megelőzni a sok hibát és növeli a kód megbízhatóságát.</li>
+                    <li><u>Memóriakezelés:</u> Automatikus memória kezelés (ARC - Automatic Reference Counting), ami optimalizálja az alkalmazások teljesítményét.</li>
+                    <li><u>Interaktív fejlesztés:</u> A Swift Playground segítségével azonnal láthatod a kódod eredményét, így gyorsabban és hatékonyabban tanulhatsz és fejleszthetsz.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="swift kep.png" alt="swift logo">
+            </div>
+        </div>
+    </div>
+<br>
+<hr>
+    
+<div id="elony" style="margin-top: 20px;">
+    <table style="width: 80%;" class="m-auto d-block">
+    <tr>
+        <th colspan="2" class="text-center"><h4>Előnyei</h4></th>
+        <th colspan="2" class="text-center"><h4>Hátrányai</h4></th> 
+    </tr>
+    <tr class="text-center">
+        <td><b>Gyorsaság és teljesítmény:</b></td>
+        <td>A Swift optimalizált teljesítményt nyújt, és gyorsan futtatja a kódot.</td>
+        <td><b>Tanulási Görbe és Új Koncepciók:</b></td>
+        <td>A Swift néhány sajátos koncepciója kezdetben nehezen érthető lehet, különösen más nyelvekből érkező fejlesztők számára.</td>
+    </tr>
+    <tr class="text-center">
+        <td><b>Biztonság:</b></td>
+        <td>A típusbiztonság és a hibakezelési mechanizmusok csökkentik a hibák számát és növelik az alkalmazások stabilitását.</td>
+        <td><b>Korlátozott Visszamenőleges Kompatibilitás:</b></td>
+        <td>Az új Swift verziók gyakran nem kompatibilisek a korábbiakkal, ami problémát okozhat a régebbi projektek karbantartásában.</td>
+    </tr>
+    <tr class="text-center">
+        <td><b>Nyílt forráskódú:</b></td>
+        <td>A Swift egy nyílt forráskódú projekt, amelyet a fejlesztői közösség is támogat és fejleszt.</td>
+        <td><b>Platformfüggőség:</b></td>
+        <td>Elsősorban az Apple ökoszisztémájára optimalizált, és más platformokon kevésbé fejlett támogatással rendelkezik.</td>
+    </tr>
+  </table>
+</div>
+<br>
+<hr>
 
+<section>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="newsletter">
+                <h2 id="hirlevel">Hírlevél Feliratkozás</h2>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <label for="name">Név:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="privacy" required>
+                        <label class="form-check-label" for="privacy">Elfogadom az adatvédelmi szabályzatot</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Feliratkozás</button>
+                    <footer class="footer">
+                        <p>A weboldal okatatási célból készült a <a target="_blank" class="fst-italic" href="https://www.kkszki.hu/">Miskolci SZC Kandó Kálmán Informatikai Technikum</a>ának!</p>
+                        <p>&copy; 2024. Készítette: Farkas Kristóf</p>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
 
-    <footer class="footer">
-        <p>&copy; 2024. Készítette: Farkas Kristóf</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Köszönjük, hogy feliratkozott!');
-        });
-    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Köszönjük, hogy feliratkozott!');
+});
+</script>
 </body>
 </html>
