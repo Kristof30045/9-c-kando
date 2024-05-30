@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.flex-container {
+    position: fixed;
+    left: 72.9999%;
+    
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #878787;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+div{
+    padding: 10px;
+    margin: auto;
+}
+
+li a {
+    display: block;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li{
+    float: left;
+}
+
+a:hover{
+    background-color: slateblue
+}
+
+
+
+table{
+    float: center;
+    margin-top: 2cm;
+    background-color: rgba(145, 145, 145, 0.627);
+    color: rgb(0, 0, 0);
+    border:  3px solid rgb(68, 208, 255);
+    width: 900px;
+    height: 300px;
+    border-collapse:  collapse;
+}
+
+
+tr, td {
+    border: 2px solid rgb(92, 206, 255);
+}
+
+.tr1es{
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: Consolas, 'Courier New', monospace;
+}
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+h1, h2, h3 {
+    color: black;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+h1 {
+    color: #5feb64;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="email"], input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.bordered-image {
+    border: 5px solid rgb(255, 0, 0); /* Fekete, 5 pixel széles keret */
+}
