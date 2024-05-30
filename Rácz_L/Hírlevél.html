@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hírlevél</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function showAlert() {
+          alert("Köszönjük, hogy feliratkozotál!");
+        }
+      </script>
+</head>
+<body>
+    <nav>
+        <li><a href="Python.html" style="background: linear-gradient(to bottom, blue, yellow);;">Főoldal</a></li>
+        <li><a href="Hírlevél.html" style="background: linear-gradient(to bottom, blue, yellow);;">Hírlevél</a></li>
+    </nav>
+
+
+    <section style="border-radius: 20px; box-shadow: 1px 1px 50px linear-gradient(to bottom, blue, yellow);" class="container bg-dark my-5">
+        <h2  style="background: linear-gradient(to bottom, blue, yellow);;">Hírlevél Feliratkozás</h2>
+        <form>
+          <div class="form-group">
+            <label for="name"  style="background: linear-gradient(to bottom, blue, yellow);;">Név</label>
+            <input type="text" class="form-control" id="name" placeholder="Adja meg a nevét">
+          </div>
+          <div class="form-group">
+            <label for="email"  style="background: linear-gradient(to bottom, blue, yellow);;">Email cím</label>
+            <input type="email" class="form-control" id="email" placeholder="Adja meg az email címét">
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="privacyPolicy">
+            <label class="form-check-label" for="privacyPolicy" style="color: blue;">Elfogadom az <a href="#">adatvédelmi szabályzatot</a></label>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="showAlert()">Feliratkozás</button>
+        </form>
+      </section>
+
+
+
+    <footer style="color: blue">
+<button style="background-color: white; color: black;" type="button" class="btn " data-bs-toggle="modal" data-bs-target="#myModal">
+    Infó
+  </button>
+  
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div  style="background: linear-gradient(to bottom, blue, yellow);" class="modal-header ">
+          <h4 class="modal-title" style="color: white;">Információk</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+    
+</body>
+</html>

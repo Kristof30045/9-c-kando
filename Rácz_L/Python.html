@@ -9,25 +9,81 @@
 <body>
 </head>
 <body>
-    <header>
-      <ul>
-      <li>
-              <a href="Python.html"><button class="round-button">Home</button> 
-              </a>
-      </li>
+  
+  <nav>
+    <li><a href="Python.html" style="background: linear-gradient(to bottom, blue, yellow);;">Főoldal</a></li>
+    <li><a href="Hírlevél.html" style="background: linear-gradient(to bottom, blue, yellow);;">Hírlevél</a></li>
+</nav>
 
-    </header>
+
     <div>
   
     <div id="content">
-    <h1>Python</h1>
-    <img src="Python logo.png" alt="Python" title="Python">
-    <p>Mi is az a python?</p>
-    <p>A Python egy általános célú, nagyon magas szintű programozási nyelv, melyet Guido van Rossum holland programozó kezdett el fejleszteni 1989 végén, majd hozott nyilvánosságra 1991-ben. A nyelv tervezési filozófiája az olvashatóságot és a programozói munka megkönnyítését helyezi előtérbe a futási sebességgel szemben. Például a behúzások szintaktikailag is fontosak.</p>
-    <img src="Guido.png.png" alt="Guido van Rossum" title="Guido van Rossum">
-    <p>Története</p>
-    <p>A Python alapötlete az 1980-as évek végén született meg. A fejlesztést 1989 decemberében kezdte el Guido van Rossum a CWI-n. A CWI (Centrum Wiskunde & Informatica, magyarul Matematikai és Informatikai Központ) egy kutatóintézet Amszterdamban. A nyelv a nevét a Monty Python csoportról kapta. 1991 februárjában jelent meg az első nyilvános változat (0.9.0 verzió néven) az alt.sources hírcsoportban. 1994-ben jött létre a comp.lang.python hírcsoport, ami egy jelentős mérföldkő volt a nyelv fejlődésében. Szintén 1994-ben látott napvilágot az 1.0 verzió, amit az ezredfordulón, 2000 októberében követett a Python 2.0, majd pedig 2008-ban a Python 3.0. Már a Python 1-es verziója bírt bizonyos funkcionális képességekkel, melyeket azonban később kivezettek belőle. Kilenc alverziója jelent meg. A Python 2-es verziója vezetett be olyan képességeket, mint a ciklusfelismerő szemétszedés, a referenciaszámolás, a list comprehension és a Unicode támogatás. A Python 2 utolsó hivatalos verziója a 2.7.18, ami 2020-ban jelent meg. A 2.6-os verzióban bevezettek egy eszközt, amivel meg lehetett nézni, hogy mely kódszakaszokat nem támogatnak majd a jövőben. A főbb verziók nem kompatibilisek egymással.</p>
- 
+           
+            <div class="container">
+                <div class="content">
+                    <div class="container">
+                        <h1>Python létrejövetele</h1>
+                        <h2>Kezdetek</h2>
+                        <img src="Guido.png.png" alt="Guido van Rossum" title="Guido van Rossum" class="right"  style="float: right;">
+                        <p>A Python programozási nyelvet<a href="https://hu.wikipedia.org/wiki/Guido_van_Rossum"> <span>Guido van Rossum</span></a> alkotta meg az 1980-as évek végén, és először 1991-ben jelent meg. Guido van Rossum a nyelv fejlesztésekor olyan programozási nyelvet akart létrehozni, amely egyszerű, olvasható, és produktív. A Python név a Monty Python Repülő Cirkusza című brit vígjáték-sorozatra utal, amely Guido kedvenc műsora volt.</p>
+                        
+                        <h2>Első Kiadás</h2>
+                        <img src="Python logo.png" alt="Python Logo" class="right"  style="float: left;">
+                        <p>A Python első hivatalos verziója, a Python 0.9.0, 1991-ben jelent meg. Ez a verzió már tartalmazott alapvető funkciókat, mint például az osztályok, a kivételkezelés, valamint a funkcionális programozás eszközei, mint a map, filter és reduce. Az első verzióban már megtalálható volt az akkoriban újdonságnak számító moduláris programozás is.</p>
+                        
+                        <h2>Fejlődés</h2>
+                        <p>Az 1990-es években a Python folyamatosan fejlődött. 1994-ben megjelent a Python 1.0, amely újabb fejlesztéseket hozott, például a lambda, a map, a filter és a reduce funkciókat. 2000-ben megjelent a Python 2.0, amely számos újítást vezetett be, köztük a listakomprehenziókat, a teljes garbage collection rendszert és a Unicode támogatást.</p>
+                        
+                        <h2>Python 3</h2>
+                        <p>2008-ban jelent meg a Python 3.0, amely jelentős változásokat hozott a nyelvben. A Python 3 célja az volt, hogy egy tisztább és következetesebb nyelvet biztosítson, amely kijavítja a Python 2 korábbi verzióinak tervezési hibáit. Az egyik legnagyobb változás a visszafelé kompatibilitás megszüntetése volt, ami azt jelentette, hogy a Python 2 kódot nem lehetett közvetlenül futtatni Python 3 alatt.</p>
+                        
+                        <h2>Verziók</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Verzió</th>
+                                    <th>Kiadás dátuma</th>
+                                    <th>Főbb újdonságok</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Python 0.9.0</td>
+                                    <td>1991</td>
+                                    <td>Első verzió, osztályok, kivételkezelés, funkcionális programozás</td>
+                                </tr>
+                                <tr>
+                                    <td>Python 1.0</td>
+                                    <td>1994</td>
+                                    <td>Lambda, map, filter, reduce</td>
+                                </tr>
+                                <tr>
+                                    <td>Python 2.0</td>
+                                    <td>2000</td>
+                                    <td>Listakomprehenziók, garbage collection, Unicode támogatás</td>
+                                </tr>
+                                <tr>
+                                    <td>Python 3.0</td>
+                                    <td>2008</td>
+                                    <td>Nem visszafelé kompatibilis, tisztább szintaxis, új funkciók</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                
+                        <h2>Népszerűség és Közösség</h2>
+                        <p>Az évek során a Python népszerűsége folyamatosan nőtt. Különösen a tudományos kutatás, az adatelemzés, a mesterséges intelligencia és a webfejlesztés területén vált népszerűvé. A Python közössége aktív és támogató, és számos online forrás, fórum és konferencia áll rendelkezésre a programozók számára.</p>
+                        
+                        <h2>Jelen és Jövő</h2>
+                        <p>Ma a Python az egyik legnépszerűbb programozási nyelv a világon, és folyamatosan fejlődik. A Python 3.x verziók rendszeresen frissülnek, új funkciókkal és javításokkal bővülnek, hogy lépést tartsanak a technológiai fejlődéssel. A Python jövője fényes, és valószínű, hogy továbbra is fontos szerepet fog játszani a programozás világában.</p>
+                    </div>
+                    <footer>
+                        <p>&copy; 2024 A Python története és létrejötte</p>
+                    </footer>
+                </div>
+            </div>
+          
+        
     </div>
     
 </body>

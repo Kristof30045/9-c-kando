@@ -8,13 +8,51 @@ body{
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 40px;
-  width: 930px;
-  height: 800px;
+  width: 1200px;
+  height: 1100px;
 }
 img{
     width: 200px;
     float: left;
 }
-p{
-    
+
+nav{
+  display: flex;
+  background-color: linear-gradient(to bottom, blue, yellow);
+  margin-top: -10px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+nav li{
+  list-style: none;
+}
+
+li{
+ padding: 10px;
+  list-style: upper;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid #ddd;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: yellow;
+  color: black;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background: yellow;
+  color: black;
+  margin-top: 20px;
 }
