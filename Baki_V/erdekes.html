@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon/Rakoczidev.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>SQL</title>
+    <style>
+        h1 {
+            margin-bottom: 30px;
+        }
+        .sql-card {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .sql-code {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success" href="home.html">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success active" href="erdekes.html">Érdekességek</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success" href="level.html">Hírlevél</a>
+              </li>
+            </ul>
+            <div class="d-flex dropdown">
+                <button type="button" class="btn btn-success dropdown-toggle me-2" data-bs-toggle="dropdown">
+                  Többi programnyelv
+                </button>
+                <ul class="dropdown-menu bg-success">
+                    <li><a class="dropdown-item" target="_self" href="https://kristof30045.github.io/9-c-kando/main_page_(dontnyulnihozza)/index.html">Összes programnyelv</a></li>
+                    <li><a class="dropdown-item" target="_self" href="https://www.instagram.com/config.lua/">Ezt meg kövensd már be<br>bolond</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid col-12 bg-dark">
+        <div class="row">
+            <div class="col-sm-12 bg-dark">
+                <h1 class="text-center text-light">SQL Implementációk</h1>
+                <div style="border-radius: 3px;" class="table-responsive">
+                    <table class="table table-hover table-bordered table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>SQL Implementáció</th>
+                                <th>Fejlesztő</th>
+                                <th>Főbb Jellemzők</th>
+                                <th>Első Megjelenés</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Amazon Aurora</td>
+                                <td>Amazon Web Services</td>
+                                <td>MySQL és PostgreSQL kompatibilis, felhő alapú, automatikus skálázás és magas rendelkezésre állás.</td>
+                                <td>2014</td>
+                            </tr>
+                            <tr>
+                                <td>SAP HANA</td>
+                                <td>SAP SE</td>
+                                <td>Memóriaalapú adatbázis, valós idejű analitika és nagy teljesítmény, zárt forráskódú.</td>
+                                <td>2010</td>
+                            </tr>
+                            <tr>
+                                <td>MariaDB</td>
+                                <td>MariaDB Corporation</td>
+                                <td>MySQL fork, nyílt forráskódú, aktívan fejlesztett, több tárolómotor támogatása.</td>
+                                <td>2009</td>
+                            </tr>
+                            <tr>
+                                <td>SQLite</td>
+                                <td>D. Richard Hipp</td>
+                                <td>Beágyazott, nyílt forráskódú, könnyűsúlyú, nincs szükség külön szerverre.</td>
+                                <td>2000</td>
+                            </tr>
+                            <tr>
+                                <td>PostgreSQL</td>
+                                <td>PostgreSQL Global Development Group</td>
+                                <td>Nyílt forráskódú, fejlett funkciók (pl. teljes szöveges keresés, JSON támogatás), ACID kompatibilis.</td>
+                                <td>1996</td>
+                            </tr>
+                            <tr>
+                                <td>MySQL</td>
+                                <td>Oracle Corporation</td>
+                                <td>Nyílt forráskódú, széles körben használt, jó teljesítmény és skálázhatóság, közösségi támogatás.</td>
+                                <td>1995</td>
+                            </tr>
+                            <tr>
+                                <td>Microsoft SQL Server</td>
+                                <td>Microsoft</td>
+                                <td>Szoros integráció a Microsoft ökoszisztémával, erős BI (Business Intelligence) eszközök.</td>
+                                <td>1989</td>
+                            </tr>
+                            <tr>
+                                <td>IBM Db2</td>
+                                <td>IBM</td>
+                                <td>Nagyvállalati megoldások, támogatás nagy mennyiségű adat kezelésére, zárt forráskódú.</td>
+                                <td>1983</td>
+                            </tr>
+                            <tr>
+                                <td>Firebird</td>
+                                <td>Firebird Foundation</td>
+                                <td>Nyílt forráskódú, kis lábnyomú, támogatja a beágyazott és a hálózati adatbázisokat is.</td>
+                                <td>1981</td>
+                            </tr>
+                            <tr>
+                                <td>Oracle Database</td>
+                                <td>Oracle Corporation</td>
+                                <td>Nagyvállalati szintű szolgáltatások, erős biztonság és teljesítmény, zárt forráskódú.</td>
+                                <td>1979</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid col-sm-12 bg-dark">
+        
+        <div class="row col-sm-12">
+            <h1 class="text-center text-light">Alapvető SQL Parancsok</h1>
+            <div class="card sql-card">
+                <div class="card-body">
+                    <h5 class="card-title">CREATE DATABASE</h5>
+                    <p class="card-text">Adatbázis létrehozása</p>
+                    <div class="sql-code">CREATE DATABASE adatbazis_neve;</div>
+                </div>
+            </div>
+
+            <div class="card sql-card">
+                <div class="card-body">
+                    <h5 class="card-title">DROP DATABASE</h5>
+                    <p class="card-text">Adatbázis törlése</p>
+                    <div class="sql-code">DROP DATABASE adatbazis_neve;</div>
+                </div>
+            </div>
+    
+            <div class="card sql-card">
+                <div class="card-body">
+                    <h5 class="card-title">CREATE TABLE</h5>
+                    <p class="card-text">Tábla létrehozása</p>
+                    <div class="sql-code">CREATE TABLE hallgatok (
+        id INT PRIMARY KEY,
+        nev VARCHAR(100),
+        szul_datum DATE
+    );</div>
+                </div>
+            </div>
+    
+            <div class="card sql-card">
+                <div class="card-body">
+                    <h5 class="card-title">ALTER TABLE - ADD</h5>
+                    <p class="card-text">Oszlop hozzáadása</p>
+                    <div class="sql-code">ALTER TABLE tabla_neve ADD oszlop_neve tipus;</div>
+                </div>
+            </div>
+    
+            <div class="card sql-card">
+                <div class="card-body">
+                    <h5 class="card-title">ALTER TABLE - MODIFY</h5>
+                    <p class="card-text">Oszlop módosítása</p>
+                    <div class="sql-code">ALTER TABLE tabla_neve MODIFY oszlop_neve uj_tipus;</div>
+                </div>
+            </div>
+
+            <div class="card sql-card">
+                <div class="card-body">
+                    <h5 class="card-title">ALTER TABLE - DROP COLUMN</h5>
+                    <p class="card-text">Oszlop törlése</p>
+                    <div class="sql-code">ALTER TABLE tabla_neve DROP COLUMN oszlop_neve;</div>
+                </div>
+            </div>
+
+            <div class="card sql-card">
+                <div class="card-body">
+                    <h5 class="card-title">DROP TABLE</h5>
+                    <p class="card-text">Tábla törlése</p>
+                    <div class="sql-code">DROP TABLE tabla_neve;</div>
+                </div>
+            </div>
+
+            <div class="card sql-card">
+                <div class="card-body">
+                    <h5 class="card-title">SELECT *</h5>
+                    <p class="card-text">Minden oszlop lekérdezése</p>
+                    <div class="sql-code">SELECT * FROM tabla_neve;</div>
+                </div>
+            </div>
+            <h5 class="text-center text-light my-2">Több itt -><a target="_blank" href="https://www.w3schools.com/sql/default.asp">https://www.w3schools.com/SQL</a></h5>
+        </div>
+    </div>
+
+
+
+
+
+      
+
+
+      <footer class="container-fluid col-12 text-center py-2 bg-secondary">
+        <div class="row">
+            <p>&copy; Viktor King 2024 Minden jog fentartva</p>
+        </div>
+    </footer>
+
+</body>
+</html>

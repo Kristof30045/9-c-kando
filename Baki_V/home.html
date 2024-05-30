@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon/Rakoczidev.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>SQL</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success active" href="home.html">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success" href="erdekes.html">Érdekességek</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success" href="level.html">Hírlevél</a>
+              </li>
+            </ul>
+            <div class="d-flex dropdown">
+                <button type="button" class="btn btn-success dropdown-toggle me-2" data-bs-toggle="dropdown">
+                  Többi programnyelv
+                </button>
+                <ul class="dropdown-menu bg-success">
+                  <li><a class="dropdown-item" target="_self" href="https://kristof30045.github.io/9-c-kando/main_page_(dontnyulnihozza)/index.html">Összes programnyelv</a></li>
+                  <li><a class="dropdown-item" target="_self" href="https://www.instagram.com/config.lua/">Ezt meg kövensd már be<br>bolond</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container text-center col-12 py-2 text-light">
+        <div  class="row">
+          <div style="border-radius: 10px;" class=" col-sm-5 bg-dark">
+            <p>
+                Az SQL (Structured Query Language) egy speciális nyelv, amelyet adatbázisok kezelésére használnak. Fő célja, hogy lehetővé tegye az adatok hatékony tárolását, lekérdezését, frissítését és törlését egy adatbázisban. Az SQL előnye, hogy strukturált és szabványosított módon teszi lehetővé az adatbázis-kezelést, ami megkönnyíti a nagy mennyiségű adat kezelését és az adatok gyors elérését.</p>
+                <hr>
+                <p>Az SQL-t széles körben használják különböző iparágakban és területeken. Például vállalatok használják ügyféladatok kezelésére, pénzügyi intézmények tranzakciós adatok nyomon követésére, e-kereskedelmi oldalak termékek és vásárlói információk tárolására, valamint kutatóintézetek tudományos adatok elemzésére. Az SQL-t adatbázis-adminisztrátorok, adatbázis-fejlesztők, adatkutatók és elemzők használják leggyakrabban, de bármely szakember, aki adatbázisokkal dolgozik, előnyt kovácsolhat belőle. Az SQL hatékonysága és rugalmassága miatt alapvető eszköz az adatkezelés területén.
+                </p>
+                <div class="justify-content-center py-4">
+                    <img class="image-fluid w-50" src="assets/img/sql.png" title="SQL logója" alt="">
+                </div>
+          </div>
+          <div class="col-sm-2">
+          </div>
+          <div style="border-radius: 10px;" class="py-2 col-sm-5 align-items-start bg-dark">Az <p>SQL használatához különféle szoftvereket és adatbázis-kezelő rendszereket (DBMS) alkalmaznak. Ezek a szoftverek lehetővé teszik az SQL parancsok futtatását és az adatbázisok hatékony kezelését. Íme néhány népszerű szoftver:</p>
+
+            <ul>
+                <li class="py-2"><span style="font-size: 11px;" class="badge bg-warning">Leghíresebb</span>MySQL: Nyílt forráskódú adatbázis-kezelő rendszer, amelyet széles körben használnak webalkalmazásokhoz és online szolgáltatásokhoz. Könnyen kezelhető és számos platformon futtatható.</li>
+                
+                <li class="py-2">PostgreSQL: Szintén nyílt forráskódú, de erősebb és fejlettebb funkciókkal rendelkezik, mint például a tranzakciókezelés és a bonyolult lekérdezések támogatása. Ideális nagyobb és összetettebb alkalmazásokhoz.</li>
+                
+                <li class="py-2">Microsoft SQL Server: Ez a Microsoft saját fejlesztésű adatbázis-kezelő rendszere, amelyet vállalati környezetben széles körben használnak. Integrálódik más Microsoft termékekkel és szolgáltatásokkal.</li>
+                
+                <li class="py-2">Oracle Database: Nagyteljesítményű és robusztus adatbázis-kezelő rendszer, amelyet nagyvállalatok és kormányzati szervezetek használnak. Kiváló skálázhatóságot és megbízhatóságot biztosít.</li>
+                
+                <li class="py-2">SQLite: Könnyűsúlyú, beágyazott adatbázis-kezelő rendszer, amely gyakran használatos mobilalkalmazásokban és beágyazott rendszerekben. Könnyen kezelhető és nem igényel külön adatbázis-szervert.</li>
+                
+                <li class="py-2">MariaDB: A MySQL egyik elágazása, amely nyílt forráskódú és teljesen kompatibilis a MySQL-lel. Továbbfejlesztett biztonsági és teljesítménybeli funkciókkal rendelkezik.</li>
+                
+                <li class="py-2">IBM Db2: Az IBM által fejlesztett adatbázis-kezelő rendszer, amelyet nagyvállalati környezetben használnak. Kiváló teljesítményt és skálázhatóságot biztosít.</li>
+            </ul>
+            
+            <p>Ezek a szoftverek különböző funkciókat és lehetőségeket kínálnak, így a felhasználók kiválaszthatják a számukra legmegfelelőbbet az alkalmazásuk igényei szerint. Mindegyik támogatja az SQL parancsokat, ami lehetővé teszi az adatok hatékony kezelését és lekérdezését.</p></div>
+        </div>
+      </div> 
+      <div class="container-fluid my-5">
+
+      </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="container-fluid col-12 text-center py-2 bg-secondary">
+        <div class="row">
+            <p>&copy; Viktor King 2024 Minden jog fentartva</p>
+        </div>
+    </footer>
+
+</body>
+</html>

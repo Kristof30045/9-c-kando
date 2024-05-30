@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon/Rakoczidev.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>SQL</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success" href="home.html">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success" href="erdekes.html">Érdekességek</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-weight: bold;" class="nav-link bg-success active" href="level.html">Hírlevél</a>
+              </li>
+            </ul>
+            <div class="d-flex dropdown">
+                <button type="button" class="btn btn-success dropdown-toggle me-2" data-bs-toggle="dropdown">
+                  Többi programnyelv
+                </button>
+                <ul class="dropdown-menu bg-success">
+                  <li><a class="dropdown-item" target="_self" href="https://kristof30045.github.io/9-c-kando/main_page_(dontnyulnihozza)/index.html">Összes programnyelv</a></li>
+                  <li><a class="dropdown-item" target="_self" href="https://www.instagram.com/config.lua/">Ezt meg kövensd már be<br>bolond</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid col-sm-12 bg-dark">
+        <div class="row col-sm-12 container mx-auto text-light">
+          <h1 class="text-center">Hírlevél Feliratkozás</h1>
+          <form id="hirlevel">
+              <div class="form-group">
+                  <label for="name">Név</label>
+                  <input type="text" class="form-control" id="name" placeholder="Ide írd a nevedet" required>
+                  <div class="invalid-feedback">Írd be a nevedet</div>
+              </div>
+              <div class="form-group">
+                  <label for="email">E-mail cím</label>
+                  <input type="email" class="form-control" id="email" placeholder="Ide írd a nevedet" required>
+                  <div class="invalid-feedback">Írd be az E-Mailed</div>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
+                  <label class="form-check-label" for="privacyPolicy">Elfogadom az adatvédelmi szabályzatot</label>
+                  <div class="invalid-feedback">Ezt itt pipáld csak be.</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Feliratkozás</button>
+          </form>
+        </div>
+    </div>
+    <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var form = document.getElementById('hirlevel');
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    form.classList.add('was-validated');
+                } else {
+                    event.preventDefault();
+                    alert('Kösz hogy feliratkoztál öcsi');
+                }
+            }, false);
+        }, false);
+        })();
+    </script>
+
+
+
+
+        
+      <footer class="container-fluid col-12 text-center py-2 bg-secondary">
+        <div class="row">
+            <p>&copy; Viktor King 2024 Minden jog fentartva</p>
+        </div>
+    </footer>
+
+</body>
+</html>
