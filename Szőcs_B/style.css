@@ -1,0 +1,131 @@
+body {
+    background-image: url(visual.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p {
+    text-align: left;
+    color: white;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.bg {
+    background-image: url(visual.jpg);
+    position: absolute;
+}
+
+h1 {
+    text-align: left;
+    margin-left: auto;
+    color: teal;
+}
+
+#h1 {
+    text-align: right;
+    margin-left: auto;
+    color: teal;
+}
+
+h2 {
+    text-align: left;
+    margin-left: auto;
+    color: teal;
+}
+
+h3 {
+    text-align: right;
+    margin-right: auto;
+    color: teal;
+}
+
+li {
+    text-justify: auto;
+    color: lightblue;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: lefft;
+    border-bottom: 1px solid lightblue;
+}
+
+th {
+    background-color: grey;
+}
+
+.vertical-line {
+    border-left: 2px solid white;
+    height: 200vh;
+    position: fixed;
+    left: 50%;
+    margin-left: -1px;
+}
+
+img {
+    width: 40%;
+    height: 50%;
+}
+
+.left {
+    float: left;
+    margin-right: 80px;
+}
+
+.right {
+    float: right;
+    margin-left: 80px;
+}
+
+.same-size-image {
+    width: 40%;
+    height: 50%;
+}
+
+a {
+    color: red;
+}
+
+form {
+    text-align: right;
+    margin-left: auto;
+}
+
+label {
+    color: white;
+}
+
+#asd {
+    color: white;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;left: 0;
+    background-color: lightblue;
+    text-align: right;
+    color: black;
+}
