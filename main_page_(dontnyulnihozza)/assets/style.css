@@ -1,5 +1,5 @@
 body{
-    height: 900px;
+    height: 1600px;
     background: linear-gradient(to bottom, rgb(46, 40, 40) 99%, limegreen 0.1% );
     margin: 25px 25px 25px 25px;
 }
@@ -62,7 +62,7 @@ body{
 
 
 /*      Minden kártya alap beállítása      */
-.card-html, .card-css, .card-js, .card-python, .card-lua, .card-java, .card-CSHARP, .card-php, .card-vue, .card-sql {
+.card-html, .card-css, .card-js, .card-python, .card-lua, .card-java, .card-CSHARP, .card-php, .card-vue, .card-sql, .card-go, .card-swift, .card-c, .card-visual, .card-scratch {
     width: 200px;
     padding: 50px;
     height: 300px;
@@ -79,42 +79,34 @@ body{
 /*      HTML-CARD       */
 
 .htmlimg{
+    width: 200px;
+    height: 200px;
     transition: 2s;
     position: relative;
     right: 5px;
 }
 
 .card-html:hover{
-    border: 5px solid #f06529;
-    border-radius: 20px;
+    max-width: 250px;
+    position: relative;
     cursor: pointer;
+    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
+                linear-gradient(to right, #E34C26, #264de4) border-box;
+    border: 5px solid transparent;
+    border-radius: 20px;
 }
+
 
 .htmlimg:hover{
-    filter: drop-shadow(1px 1px 20px #f06529);
+    filter: drop-shadow(1px 1px 5px white);
     transform: scale(1.15);
 }
 
+.html-h1{
+    background: linear-gradient(to left, #264de4 45%, #E34C26 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-/*      CSS-CARD        */
-
-.cssimg{
-    width: 240px;
-    height: 239px;
-    position: relative;
-    right: 20px;
-    transition: 2s;
-}
-
-.card-css:hover{
-    border: 5px solid #2965f1;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.cssimg:hover{
-    filter: drop-shadow(1px 1px 20px #2965f1);
-    transform: scale(1.15);
 }
 
 
@@ -379,6 +371,147 @@ body{
         -webkit-text-fill-color: transparent;
     
     }
+
+
+/*      GO-CARD     */
+.goimg{
+    width: 250px;
+    height: 249px;
+    right: 25px;
+    position: relative;
+    transition: 2s;
+}
+
+.card-go:hover{
+    border: 5px solid #29BEB0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.goimg:hover{
+    filter: drop-shadow(1px 1px 15px #29BEB0);
+    transform: scale(1.1);
+}
+
+.go-h1{
+    color: #29BEB0;
+}
+
+/*      SWIFT-CARD      */
+
+.swiftimg{
+    width: 250px;
+    height: 249px;
+    right: 25px;
+    position: relative;
+    transition: 2s;
+}
+
+.card-swift:hover{
+    border: 5px solid orange;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.swiftimg:hover{
+    filter: drop-shadow(1px 1px 15px orange);
+    transform: scale(1.1);
+}
+
+.swift-h1{
+    color: orange;
+}
+
+
+/*      C++-CARD      */
+
+.cimg{
+    width: 250px;
+    height: 249px;
+    right: 25px;
+    position: relative;
+    transition: 2s;
+}
+
+.card-c:hover{
+    border: 5px solid #044F88;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cimg:hover{
+    filter: drop-shadow(1px 1px 15px #044F88);
+    transform: scale(1.1);
+}
+
+.c-h1{
+    color: #044F88;
+}
+
+/*      VISUAL-CARD      */
+
+.visualimg{
+    width: 250px;
+    height: 249px;
+    right: 25px;
+    position: relative;
+    transition: 2s;
+}
+
+.card-visual:hover{
+    border: 5px solid #044F88;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.visualimg:hover{
+    filter: drop-shadow(1px 1px 15px #044F88);
+    transform: scale(1.1);
+}
+
+.visual-h1{
+    background: linear-gradient(to left, purple 45%, lightblue  50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+
+/*      SCRATCH-CARD      */
+
+.scratchimg{
+    width: 250px;
+    height: 249px;
+    right: 25px;
+    position: relative;
+    transition: 2s;
+}
+
+.card-scratch{
+    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
+                linear-gradient(to bottom, transparent , transparent ) border-box;
+}
+
+.card-scratch:hover{
+    max-width: 250px;
+    position: relative;
+    cursor: pointer;
+    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
+                linear-gradient(to bottom, white , orange ) border-box;
+    border: 5px solid transparent;
+    border-radius: 20px;
+}
+
+.scratchimg:hover{
+    filter: drop-shadow(1px 1px 15px orange);
+    transform: scale(1.1);
+}
+
+.scratch-h1{
+    background: linear-gradient(to left, white 45%, orange  50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
 
 
 
