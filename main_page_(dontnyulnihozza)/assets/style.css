@@ -512,6 +512,38 @@ body{
         -webkit-text-fill-color: transparent;
 }
 
+/*      RUBY-CARD      */
+
+.rubyimg{
+    width: 250px;
+    height: 249px;
+    right: 25px;
+    position: relative;
+    transition: 2s;
+}
+
+.card-ruby{
+    background: linear-gradient(rgb(46, 40, 40), rgb(46, 40, 40)) padding-box,
+                linear-gradient(to bottom, transparent , transparent ) border-box;
+}
+
+.card-ruby:hover{
+    max-width: 250px;
+    position: relative;
+    cursor: pointer;
+    border: 5px solid #820C02;
+    border-radius: 20px;
+}
+
+.rubyimg:hover{
+    filter: drop-shadow(1px 1px 50px #820C02);
+    transform: scale(1.1);
+}
+
+.ruby-h1{
+   color: #820C02;
+}
+
 
 
 
