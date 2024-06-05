@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Weboldal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>JavaScript Weboldal</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JavaScript</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>A JavaScript-ről</h2>
+        <h1>A JavaScript fogalma</h1>
+        <p>A JavaScript programozási nyelv egy objektumorientált, prototípus-alapú szkriptnyelv, amelyet weboldalakom elterjedten használnak.</p>
+        <h2>Mire lehet hasznáni a JavaScriptet?</h2>
+        <p>Alább láthattok egy listát, amelyen pár példát szerepel, hogy általában milyen dolgok megvalósításához szoktuk használni a JavaScript-et.
+
+            Készíthetünk vele egy olyan gombot, amely gombnyomásra több, vagy kevesebb információt jelenít meg.
+            Akár egy képnézegetőt is készíthetünk vele, amelyben nyilak segítségével navigálhatunk.
+            Lehetővé teszi, hogy a képek nagyíthatóak legyenek.
+            Különböző számlálókat hozhatunk létre vele. Például visszaszámlót.
+            Megjeleníthetjük vele a pontos időt.
+            Természetesen ezeken kívül is körülbelül végtelen a lehetőségek száma, egyedül a képzeletünk szabhat határt.</p>
+        <h3>Mi is az a JavaScript?</h3>
+        <p>Szóval fent azt írtuk, hogy a JavaScript egy kliensoldali programozási nyelv, de mit is takar ez pontosan? A kliensoldali szó azt jelenti, hogy csak olyan dolgokat tudunk elintézni a JavaScript-tel, ami a kliens (felhasználó) oldalán (eszközén) helyezkedik el.
+
+            Nézzünk pár példát, hogy egyértelműbb legyen. Tegyük fel, hogy van egy adatbázis a szerverünkön, amibe tároljuk a felhasználó belépési adatait, például felhasználónév, jelszó. Ahhoz, hogy ehhez hozzáférjünk el kellene érnünk a szervert, de mivel a JavaScipt kliensoldali szkriptnyelv, így ez nem fog tudni megvalósulni.
+            
+            A JavaScript segítségével csak olyan dolgokhoz férünk hozzá, ami a felhasználó számítógépén is megtalálható. Például tegyük fel, hogy van egy div, ennek a tartalmát dinamikusan módosíthatjuk. Tegyük fel, hogy bekérjük a felhasználó nevét egy űrlappal, majd a nevével együtt köszöntjük így: ,,Üdvözöllek, XY.”</p>
+        <h4>És mi az a JS?</h4>
+        <p>Valószínűleg a legtöbben már kitaláltátok, hogy a JS a JavaScript két betűjéből tevődik össze. A JS igazából maga a JavaScript, ez csak egy rövidítés, szóval amikor azt mondjuk, hogy JS, akkor is ugyanúgy a JavaScript-re gondolunk.</p>
+
+
+        <p>Ez egy kép, amely bemutatja a JavaScript alapjait.</p>
+        <img src="https://okt.inf.szte.hu/szkriptnyelvek/gyakorlat/js/img/DOM_tree_example.png" alt="Placeholder Image" class="img-fluid">
+
+        <h3>Link</h3>
+        <p>További információkért látogass el a <a href="https://www.javascript.com">JavaScript hivatalos oldalára</a>.</p>
+
+       
+
+        <h3>Táblázat</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Név</th>
+                    <th>Leírás</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Egy programozási nyelv a web fejlesztéshez.</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>A weboldalak szerkezetének leírására szolgáló nyelv.</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>A weboldalak stílusának kialakítására szolgáló nyelv.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Hírlevél Feliratkozás</h3>
+        <form id="newsletter-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Név</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
+                <label class="form-check-label" for="privacyPolicy">Elfogadom az adatvédelmi szabályzatot</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Feliratkozás</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Készítette: [Jankovics Botond]</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
