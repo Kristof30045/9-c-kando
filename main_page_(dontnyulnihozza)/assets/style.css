@@ -523,16 +523,8 @@ body{
     body{
         height: 2800px;
     }
-
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-        scale: 0.6;
-        position: relative;
-        top: -100px;
-    }
-
-    #container-h1{
+    
+  #container-h1{
         position: relative;
         top: 1px;
         left: 26%;
