@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hírlevél</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="background3"></div>
+
+    <div class="top">
+        <a href="https://kristof30045.github.io/9-c-kando/main_page_(dontnyulnihozza)/index.html">Főoldal</a>
+        <a href="index.html">Lua</a>
+        <a href="osszehas.html">Összehasonlítás</a>
+    </div>
+
+    <dialog id="dialogus">
+        <button class="modalButton" onclick="closeModal()">X</button>
+        <form action="">
+          <center>
+            <p>Források: <a href="https://hu.wikipedia.org/wiki/Lua_%28programoz%C3%A1si_nyelv%29" target="_blank"  id="masszin">Wikipedia</a>, <a href="https://blog.desdelinux.net/hu/telep%C3%ADtse-a-lua-t-egy-kiv%C3%A1l%C3%B3-programoz%C3%A1si-nyelv-kezd%C5%91knek/" target="_blank" id="masszin">Desdelinux</a>, <a href="http://nyelvek.inf.elte.hu/leirasok/Lua/" target="_blank" id="masszin">Elte</a>, <a href="https://www.youtube.com/watch?v=5mQ5r8J6__k" target="_blank" id="masszin">Youtube</a>, <a href="https://www.wikiwand.com/hu/Lua_%28programoz%C3%A1si_nyelv%29" target="_blank" id="masszin">Wikiwand</a></p>
+          </center>
+        </form>
+      </dialog>
+
+    <div class="meret">
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email cím</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Jelszó</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Küldés</button>
+      </form>
+    </div>
+
+      <footer>
+        © Szabó Levente ⏐ 2024 ⏐ A weboldal csak tanulás céljából.
+        <button onclick="openModal()">Források</button>
+    </footer>
+</body>
+</html>

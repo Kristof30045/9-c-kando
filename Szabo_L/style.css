@@ -20,10 +20,19 @@
 	background-color: #B59DF7;
 }
 
+.background3 {
+	background-image: url('bg.png');
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+}
+
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: #E7DEF7;
 }
 
 .background {
@@ -36,6 +45,18 @@ body {
 	right: 0px;
 	z-index: -1;
 	filter: blur(.3rem);
+}
+.background2 {
+	background-image: url('htmllua.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+	filter: blur(.3rem);
+
 }
 
 footer {
@@ -141,3 +162,61 @@ footer button {
     align-self: flex-start;
     margin-left: 35px;
 }
+
+table {
+	margin-top: 12%;
+	width: max-content;
+	border: 0.1rem solid #B59DF7;
+	height: 30rem;
+	margin-left: 23%;
+	background-color: #6d57a5;
+	padding: 1rem;
+}
+
+td {
+	text-align: center;
+	border: 1px solid #ad8fff;
+	
+}
+
+#vastag {
+	font-weight: bolder;
+}
+
+.ize {
+	color: #FF5003;
+}
+
+.meret {
+	width: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6%;
+	outline: 2px #664FA1 solid;
+	border-radius: 2rem;
+	padding: 1rem;
+}
+
+/* styles.css */
+.btn-primary {
+	--bs-btn-bg: #664FA1 !important;
+	--bs-btn-hover-bg: #B59DF7 !important;
+	border: none !important; 
+}
+
+.form-control {
+	border: black 1px solid !important;
+	
+}
+
+#masszin:hover{
+	color:#B59DF7 ;
+}
+
+
+
+#masszin {
+	color: #4800ff;
+}
+
+
