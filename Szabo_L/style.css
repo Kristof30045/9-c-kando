@@ -2,7 +2,9 @@
 	display: flex;
 	justify-content: center;
 	background-color: #664FA1;
-	gap: 25px;
+	gap: 2rem;
+	padding-top:0.5rem ;
+	padding-bottom:0.5rem;
 	
 }
 
@@ -14,6 +16,7 @@
 	text-decoration: none;
 	background-color: #E7DEF7;
 	border-radius: 25px;
+	font-weight: bold;
 }
 
 .top a:hover {
