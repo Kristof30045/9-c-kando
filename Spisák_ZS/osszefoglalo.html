@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ruby Üssze foglalás, adatok</title>
+    <style>
+    </style>
+</head>
+
+
+<body>
+
+    <ul class="flex-container">
+        <li><a href="index.html">Alapvető tudnivaló</a></li>
+        <li><a href="osszefoglalo.html">Összefoglaló</a></li>     
+        <li><a href="kepek.html">Képek</a></li>
+    </ul>
+    <header>
+        <h1>Ruby Programozási Nyelv</h1>
+    </header>
+    <section>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Témák</th>
+                <th>Adatok</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kialakítás éve</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>Kialakító</td>
+                <td>Yukihiro Matsumoto</td>
+            </tr>
+            <tr>
+                <td>Fő paradigmák</td>
+                <td>Objektumorientált, imperatív, funkcionális</td>
+            </tr>
+            <tr>
+                <td>Használati területek</td>
+                <td>Webfejlesztés, automatizáció, adatfeldolgozás</td>
+            </tr>
+            <tr>
+                <td>Legismertebb keretrendszer</td>
+                <td>Ruby on Rails</td>
+            </tr>
+            <tr>
+                <td>Aktuális verzió</td>
+                <td>3.1.2 (2024 május)</td>
+            </tr>
+            <tr>
+                <td>Főbb jellemzők</td>
+                <td>Egyszerű szintaxis, dinamikus típusok, garbage collection</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <main>
+     
+<section>
+    
+    <table>
+        <tr>
+            <th>Téma</th>
+            <th>Leírás</th>
+            <th>Példa</th>
+        </tr>
+        <tr>
+            <td>IRB meghívása Unix alapú rendszereken</td>
+            <td>Parancssorból az <code>irb</code> paranccsal:</td>
+            <td class="code">&gt;irb<br>irb(main):001:0&gt; p (1/2).class<br>Fixnum<br>→ nil</td>
+        </tr>
+        <tr>
+            <td>Osztályok</td>
+            <td>Az osztályok nevét mindig nagybetűvel kell kezdeni, mivel konstansoknak számítanak.</td>
+            <td class="code">
+                class HelloClass<br>
+                &nbsp;&nbsp;def koszontes<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;puts "Helló világ!"<br>
+                &nbsp;&nbsp;end<br>
+                end<br><br>
+                HelloClass::koszontes()
+            </td>
+        </tr>
+        <tr>
+            <td>Öröklés és Singleton Metódusok</td>
+            <td>Minden létrehozott osztály egy ősosztályból, az Object-ből származik, így örökli ezen metódusait. Érdekesség, hogy minden osztály objektum is önmagában így lehetnek singleton metódusai, amelyeket az osztály objektum-példányai nem érhetnek el.</td>
+            <td class="code">
+                class HelloClass<br>
+                &nbsp;&nbsp;def self.koszontes<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;puts "Üdvözöl a ruby nyelv!"<br>
+                &nbsp;&nbsp;end<br>
+                end<br><br>
+                HelloClass.koszontes() → "Üdvözöl a ruby nyelv!"<br>
+                HelloClass.new().koszontes() → NoMethodError
+            </td>
+        </tr>
+        <tr>
+            <td>Példányosítás</td>
+            <td>Az osztályok konstruktorának mindig az <code>initialize</code> metódus számít.</td>
+            <td class="code">
+                class CreateObject<br>
+                &nbsp;&nbsp;def initialize<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;puts "Objektum létrehozása"<br>
+                &nbsp;&nbsp;end<br>
+                end<br><br>
+                A = CreateObject.new() → "Objektum létrehozása"
+            </td>
+        </tr>
+        <tr>
+            <td>Osztálymetódusok</td>
+            <td>A létrehozott osztályunk metódusai alapesetben példányosítás nélkül nem hívhatóak meg, ezt írhatjuk felül a metódus elé tett 'self.' jelölővel.</td>
+            <td class="code">
+                class InkrementaloOsztaly<br>
+                &nbsp;&nbsp;def self.inkrementald(szam)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;szam += 1<br>
+                &nbsp;&nbsp;end<br>
+                end<br><br>
+                puts InkrementaloOsztaly.inkrementald(5) → 6
+            </td>
+        </tr>
+        <tr>
+            <td>Osztályok Kibővítése</td>
+            <td>A Ruby dinamizmusának alapját jelenti, hogy az osztályok nyitottak.</td>
+            <td class="code">
+                class A<br>
+                &nbsp;&nbsp;def self.b<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;puts "valami"<br>
+                &nbsp;&nbsp;end<br>
+                end<br>
+                A.b → "valami"<br><br>
+                class A<br>
+                &nbsp;&nbsp;def self.b<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;puts "inkabb mas"<br>
+                &nbsp;&nbsp;end<br>
+                end<br>
+                A.b → "inkabb mas"
+            </td>
+        </tr>
+        <tr>
+            <td>Feltételes szerkezetek</td>
+            <td>A más nyelvekben megszokotthoz hasonlóan is lehet használni.</td>
+            <td class="code">
+                if a &lt; b then<br>
+                &nbsp;&nbsp;c = -1<br>
+                elsif a == b<br>
+                &nbsp;&nbsp;c = 0<br>
+                else<br>
+                &nbsp;&nbsp;c = 1<br>
+                end<br><br>
+                1 &lt;=&gt; 0 → 1<br>
+                1 &lt;=&gt; 1 → 0<br>
+                1 &lt;=&gt; 2 → -1<br><br>
+                puts 'de jó' if 1 > 0 → "de jó"
+            </td>
+        </tr>
+        <tr>
+            <td>Érték visszaadása feltételvizsgálatból</td>
+            <td>A feltételvizsgálat értéket is tud visszaadni.</td>
+            <td class="code">
+                kimenet = if a &lt; b then<br>
+                &nbsp;&nbsp;-1<br>
+                elsif a == b<br>
+                &nbsp;&nbsp;0<br>
+                else<br>
+                &nbsp;&nbsp;1<br>
+                end<br><br>
+                kimenet = a &lt; b ? a : b
+            </td>
+        </tr>
+        <tr>
+            <td>Unless (ha nem)</td>
+            <td>Létezik az if fordítottja is, az unless is. Ez értelemszerűen akkor fut le, ha a vizsgált kifejezés hamis.</td>
+            <td class="code">
+                unless 1 &lt; 2<br>
+                &nbsp;&nbsp;er = 1<br>
+                else<br>
+                &nbsp;&nbsp;er = 2<br>
+                end<br><br>
+                kim = unless 1 &lt; 0 then 1 else 2 end<br><br>
+                a = 1 unless a == 1 → ekvivalens: a = 1 if a != 1
+            </td>
+        </tr>
+        <tr>
+            <td>While (amíg)</td>
+            <td>Amíg a feltétel igaz, végrehajtja a ciklusmagot.</td>
+            <td class="code">
+                a = 0<br>
+                while a &lt; 10<br>
+                &nbsp;&nbsp;a += 1<br>
+                &nbsp;&nbsp;puts a<br>
+                end
+            </td>
+        </tr>
+    </table>
+    
+
+</section>
+
+<section>
+    <div class="container">
+        <h1>Hírlevél Feliratkozás</h1>
+        <p>Iratkozzon fel hírlevelünkre, hogy értesüljön a legújabb hírekről!</p>
+        <form action="newsletter_signup.php" method="post">
+            <input type="email" name="email" placeholder="Adja meg az email címét" required>
+            <input type="submit" value="Feliratkozás">
+        </form>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024. Minden jog fenntartva.</p>
+</footer>
+</main>
+</body>
+</html>
+
+
